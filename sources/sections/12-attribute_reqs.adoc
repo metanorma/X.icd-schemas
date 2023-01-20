@@ -3,7 +3,7 @@
 
 Each ICD event attribute is either Required, Recommended or Optional:
 
-[cols="a,a", options="header,unnumbered"]
+[cols="a,a",options="header"]
 |===
 | Attributes requirements | Description
 
@@ -29,6 +29,7 @@ be included (null values are not a allowed).
 | Optional attributes
 | provide detailed event information. One or more products may supply
 optional attributes.
+
 |===
 
 EDITOR: we shall describe '`Reserved`'
@@ -37,25 +38,28 @@ EDITOR: we shall describe '`Reserved`'
 
 The required attributes in the ICD schema are:
 
-[cols="a,a", options="header,unnumbered"]
+[cols="a,a",options="header"]
 |===
 | Group | Attributes
-| Classification |
+
+| Classification
+|
 * category_id (default = 0; Unknown)
 * type_id (default = 0; Unknown)
 * id (default = 0; Unknown)
 * version
 * severity_id  (default = 0; Unknown)
 
-| Primary |
-* device_time
-
+| Primary
+|
+* device_time +
 For aggregated events
 
 * device_end_time +
 This attribute is optional, unless the count is greater than 1. If
 the count is greater than 1 and device_end_time is missing, set device_end_time
 to the device_time
+
 |===
 
 
@@ -63,13 +67,19 @@ to the device_time
 
 The recommended attributes in the ICD schema are:
 
-[cols="a,a", options="header,unnumbered"]
+[cols="a,a",options="header"]
 |===
 | Group | Attributes
-| Primary | Event type-specific attributes for example, the file,
+
+| Primary
+| Event type-specific attributes for example, the file,
 process, policy, and threat objects that are related to the event.
-| Message | message
-| Origination |
+
+| Message
+| message
+
+| Origination
+|
 * device_name
 * product_name
 * product_ver
@@ -95,4 +105,5 @@ In addition, the following are the attribute extensions:
 * product_uid
 * seq_num
 * user_uid
+
 |===
