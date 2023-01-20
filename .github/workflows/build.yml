@@ -2,15 +2,33 @@ name: build
 
 on:
   push:
-    branches: [ master, main ]
+    branches: [main]
   pull_request:
-    paths-ignore:
-      - .gitlab-ci.yml
   workflow_dispatch:
 
+concurrency:
+  group: "${{ github.workflow }}-${{ github.head_ref || github.ref_name }}"
+  cancel-in-progress: true
+
 jobs:
-  test-docker:
-    uses: metanorma/ci/.github/workflows/sample-docker.yml@main
-    secrets:
-      pat_username: metanorma-ci
-      pat_token: ${{ secrets.METANORMA_CI_PAT_TOKEN }}
+  build:
+    runs-on: ubuntu-latest
+    container:
+      image: metanorma/metanorma:latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+
+      - name: Metanorma cache
+        uses: actions-mn/cache@v1
+
+      - name: Metanorma generate site
+        uses: actions-mn/site-gen@v1
+        with:
+          agree-to-terms: true
+
+      - name: Upload metanorma artifact
+        uses: actions/upload-artifact@v3
+        with:
+          name: draft
+          path: site
