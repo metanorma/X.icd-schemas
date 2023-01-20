@@ -1,0 +1,15 @@
+
+[appendix]
+== Electronic Attachment of schemas
+
+[EDITOR]
+====
+a lot of work here to do
+
+* How to do an ASN.1 project
+* Do the scripts for the ASN.1 project
+* How do to an electronic attachment
+* How to perhaps automatically extract the human readable part and
+insert it into this recommendation
+* Etc.
+====
