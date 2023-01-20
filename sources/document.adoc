@@ -1,0 +1,49 @@
+= 2nd Revised baseline text for X.icd-schemas: Vendor agnostic Security Data Schemas for Integrated Cyber Defense Solutions
+:docnumber: SG17-TD611
+:bureau: TD
+:status: in-force-prepublished
+:series:
+:edition:
+:published-date: 02-09-2022
+:copyright-year: 2022
+:language: en
+:doctype: recommendation
+:keywords: security, data, schemas
+:imagesdir: images
+:mn-document-class: itu
+:mn-output-extensions: xml,html,doc,pdf,rxl
+:local-cache-only:
+:data-uri-image:
+
+
+include::sections/00-abstract.adoc[]
+
+include::sections/01-scope.adoc[]
+
+include::sections/02-norm_refs.adoc[]
+
+include::sections/03-terms_defs.adoc[]
+
+include::sections/04-abbreviations.adoc[]
+
+include::sections/05-conventions.adoc[]
+
+include::sections/06-introduction.adoc[]
+
+include::sections/07-overview.adoc[]
+
+include::sections/08-categories.adoc[]
+
+include::sections/09-objects.adoc[]
+
+include::sections/10-events.adoc[]
+
+include::sections/11-attribute_groups.adoc[]
+
+include::sections/12-attribute_reqs.adoc[]
+
+include::sections/13-dictionary.adoc[]
+
+include::sections/aa-schemas.adoc[]
+
+include::sections/az-bibliography.adoc[]
