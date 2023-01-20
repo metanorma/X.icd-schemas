@@ -1,0 +1,23 @@
+
+== Attribute groups in the ICD Schema
+
+For convenience the following group names can be used to group attributes:
+
+[cols="a,a", options="header,unnumbered"]
+|===
+| Group name | Contains
+| Classification | attributes that identify the event category, type,
+version, disposition and severity.
+| Primary | attributes that are the most relevant for this event type.
+| Message | attributes that report the event message information.
+| Occurrence | attributes that specify when the event occurred.
+| Origination | attributes that specify the user, device, product
+and feature that are reported in this event.
+| Status | attributes that report the detailed status of the event
+action.
+| Remediation | attributes that indicate if the event was remediated
+and specify how to do so.
+| Collector | attributes that identify the collector that reported
+the event.
+| [STIC | attributes that are reserved for use by the STAR STIC library]
+|===

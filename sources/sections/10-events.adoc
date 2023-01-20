@@ -1,0 +1,189 @@
+
+== Events in the ICD Schema
+
+EDITOR: There are dozens, perhaps hundreds of events so we will start
+with the base event, the most important
+
+[cols="a,a",options="unnumbered"]
+|===
+h| Technical Name | `base`
+h| Type | `event`
+h| Name | Common Attributes
+h| Description | Common Attributes can be present in any event type.
+The common attributes include the required classification, occurrence,
+and origination attributes, as well as any attributes that are not
+specific to a particular event type.
+2+h| Attributes attached to this object
+h| Technical Name h| `category_id`
+| Name |
+| Description | The event type category.
+| Requirement | `required`
+| Group | `classification`
+| Extension | `false`
+| Enumeration |
+!===
+! # ! Name ! Default Value
+! 0 ! Unknown !
+! 1 ! Security !
+! 2 ! License !
+! 3 ! Application Activity !
+! 4 ! Audit !
+! 5 ! System Activity !
+! 6 ! Diagnostic !
+! 7 ! Evidence of Compromise !
+! 8 ! Information Protection !
+!===
+| Technical Name | `type_id`
+| Name |
+| Description | The event type.
+| Requirement | `required`
+| Group | `classification`
+| Extension | `false`
+| Enumeration |
+| Technical Name | `type`
+| Name |
+| Description | The event type.
+| Requirement | `optional`
+| Group | `classification`
+| Extension | `false`
+| Enumeration |
+| Technical Name | `event_id`
+| Name |
+| Description |
+| Requirement | `reserved`
+| Group | `classification`
+| Extension | `false`
+| Enumeration | {}
+| Technical Name | `id`
+| Name | Disposition
+| Description | The outcome of the event.
+| Requirement | `required`
+| Group | `classification`
+| Extension | `false`
+| Enumeration | {}
+| Technical Name | `end_time`
+| Name |
+| Description | For aggregate events, the *Device End Time* adjusted
+to the server clock.
+| Requirement | `reserved`
+| Group | `occurence`
+| Extension |
+| Enumeration |
+| Technical Name | `count`
+| Name |
+| Description | For aggregate events,  the number of times that the
+event occurred during the *Device Time to Device End Time* period.
+| Requirement | `optional`
+| Group | `occurence`
+| Extension |
+| Enumeration |
+| Technical Name | `user`
+| Name |
+| Description | The user that pertains to the event. Can be used to
+provide information in addition to *User Name*.
+| Requirement | `recommended`
+| Group | `origination`
+| Extension | `false`
+| Enumeration |
+| Technical Name | `severity_id`
+| Name |
+| Description |
+| Group | `classification`
+| Requirement | `required`
+| Extension | `false`
+| Enumeration |
+!===
+! # ! Name ! Description ! Default Value
+! 0 ! Unknown ! The event severity is not known. ! {}
+! 1 ! Informational ! Purely informational. No action is needed. ! {}
+! 2 ! Warning ! The user decides if action is needed. ! {}
+! 3 ! Minor ! Action is required but the situation is no serious at this time. ! {}
+! 4 ! Major ! Action is required immediately. ! {}
+! 5 ! Critical ! Action is required immediately and the scope is broad. ! {}
+! 6 ! Fatal ! An error occurred but it si too late to make remedial action ! {}
+!===
+| Technical Name | `version`
+| Name |
+| Description | The event type version, in the form major.minor.
+| For example: 1.7. Event consumers use the version to determine what
+the event attributes represent.
+| Requirement | `required`
+| Group | `classification`
+| Extension | `false`
+| Enumeration |
+| Technical Name | `product_name`
+| Name |
+| Description | The name of the product originating the event.
+| Notes | The Product Name is ordinarily defined by the product SKU,
+but it could be any other name that identifies the product. For example,
+"`Norton Internet Security`" or "`Norton Mobile Security`"
+| Requirement | `recommended`
+| Group | `origination`
+| Extension | `false`
+| Enumeration |
+| Technical Name | `device_os_type_id`
+| Name |
+| Description |
+| Requirement | `recommended`
+| Group | `origination`
+| Extension |
+| Enumeration |
+!===
+! # ! Name ! Default Value
+! 0 ! Unknown ! {}
+! 1001200 ! OtherLinux ! {}{}
+! 300 ! Solaris ! {}
+! 301 ! AIX ! {}
+! 302 ! HP-UX ! {}
+! 400 ! Macintosh ! {}
+! 500 ! iOS ! {}
+! 501 ! Android ! {}
+! 502 ! Windows Mobile ! {}
+! 1001 ! Other ! {}
+!===
+| Technical Name | `device_vhost`
+| Name |
+| Description |
+| Requirement | `recommended`
+| Group | `origination`
+| Extension |
+| Enumeration |
+!===
+! # ! Name ! Default Value
+! 0 ! Unknown ! {}
+! 1 ! None ! {}
+! 10 ! VMware ! {}
+! 11 ! Hyper-V® ! {}
+! 12 ! Xen ! {}
+! 13 ! KVM ! {}
+! 14 ! QEMU ! {}
+! 15 ! VirtualBox ! {}
+! 30 ! AWS ! {}
+! 31 ! Azure ! {}
+! 32 ! GCP ! {}
+! 33 ! OCP ! {}
+! 50 ! Docker ! {}
+! 51 ! Cloud Foundry ! {}
+! 52 ! LXC !
+!===
+| Technical Name | `status_id`
+| Name |
+| Description |
+| Requirement | `recommended`
+| Group | `Status`
+| Extension | `false`
+| Enumeration |
+!===
+! # ! Name ! Default Value
+! 0 ! Unknown ! {}
+! 1 ! Success ! {}
+! 2 ! Failure ! {}
+!===
+| Technical Name | `cybox`
+| Name |
+| Description |
+| Requirement | `reserved`
+| Group | `Primary`
+| Extension |
+| Enumeration |
+|===
