@@ -5,5 +5,5 @@ metanorma:
       - sources/document.adoc
 
   collection:
-    name: SG17-TD611
-    organization: ITU
+    name: "ITU-T SG 17 Q 15: X.icd-schemas"
+    organization: ITU-t
