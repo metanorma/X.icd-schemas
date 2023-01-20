@@ -9,6 +9,8 @@
 :status: draft
 :group: 17
 :grouptype: study-group
+:groupyearstart: 2022
+:groupyearend: 2024
 :subgroup: 15
 :subgrouptype: question
 :source: editor
