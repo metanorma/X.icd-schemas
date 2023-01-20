@@ -1,0 +1,16 @@
+name: build
+
+on:
+  push:
+    branches: [ master, main ]
+  pull_request:
+    paths-ignore:
+      - .gitlab-ci.yml
+  workflow_dispatch:
+
+jobs:
+  test-docker:
+    uses: metanorma/ci/.github/workflows/sample-docker.yml@main
+    secrets:
+      pat_username: metanorma-ci
+      pat_token: ${{ secrets.METANORMA_CI_PAT_TOKEN }}
