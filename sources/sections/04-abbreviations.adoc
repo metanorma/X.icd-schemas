@@ -1,0 +1,5 @@
+
+== Abbreviations and acronyms
+
+EoC:: Evidence of Compromise
+ICD:: Integrated Cyber Defense
