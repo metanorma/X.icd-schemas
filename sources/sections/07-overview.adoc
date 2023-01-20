@@ -1,0 +1,19 @@
+
+== Overview of the ICD Schema
+
+Characteristics of the ICD Schema
+
+* Event types
+
+EDITOR: need to find a good definition here.
+
+* Event types can be organized in categories
+* Each event type has required, recommended and optional attributes
+* All event types include a set of common attributes
+* Attributes can be strings, numbers, enumerations or objects
+* Attributes that are enumerations are constrained to subsets within
+different event types
+* Attributes are organized into groups for convenience
+
+NOTE: Products that are event sources can emit events across categories
+and event types

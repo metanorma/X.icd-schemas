@@ -1,0 +1,29 @@
+
+== Introduction
+
+An Integrated Cyber Defense (ICD) is an initiative to provide interoperability
+for security products, technologies and services.
+
+While ICD adopts open standards, it proposes a new standard for security
+event telemetry.
+
+The ICD Schema is focused on the representation of security activity
+rather than its transport.
+
+=== Benefits of ICD Schema
+
+Most governments and corporations that acquire security products,
+technologies and services will do so from multiple vendors.  Without
+a common baseline taxonomy, the cost and complexity of integrating
+is extremely high.
+
+While today, many government agencies and corporations are prepared
+to do the work of normalizing and integrating for their SIEM and data
+lakes, the result is often a shallow or minimum implementation that
+is incompatible with peer organizations.
+
+The vendor agnostic ICD Schema, if adopted, is rich enough to express
+more interesting and important activity, but also allows for a community
+of organizations that share the same objectives to shorten the time
+it takes to analyze data, and collaborate where possible against common
+threat actors.

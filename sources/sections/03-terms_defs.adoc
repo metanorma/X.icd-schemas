@@ -1,0 +1,41 @@
+
+== Terms and definitions
+
+=== Terms defined elsewhere
+
+==== Categories
+
+EDITOR: hope to find a good definition for this term elsewhere
+
+==== Email
+
+EDITOR: find a normative reference for an IETF RFC822 email, might
+be a higher number now
+
+==== Epoch
+
+EDITOR: we hope this is defined somewhere as 01/01/1970 00:00:00 UTC
+
+==== Directory
+
+EDITOR: find a normative reference from X.500 and LDAP.
+
+==== Policy
+
+EDITOR: find a normative reference for a policy e.g. in X.800.
+
+==== URL
+
+EDITOR: find a normative reference perhaps in W3C?
+
+=== Terms defined in this Recommendation
+
+EDITOR: We should consider to bring ALL the event terms and attributes
+here so that they can be used and referred to by other Recommendations
+and normative work elsewhere, in particular as to potential alignment
+with OASIS OpenC2.
+
+==== Integrated Cyber Defense
+
+An initiative for interoperability of security products, technologies
+and services.

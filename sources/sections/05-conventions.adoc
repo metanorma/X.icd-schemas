@@ -1,0 +1,16 @@
+
+== Conventions
+
+In this Recommendation:
+
+The phrase "is required" indicates a requirement that must be strictly
+followed and from which no deviation is permitted if conformance to
+this document is to be claimed.
+
+The phrase "is recommended" indicates a requirement that is recommended,
+but which is not absolutely required. Thus, this requirement need
+not be present to claim conformance.
+
+In this Recommendation, the keywords "shall" and "should" may sometimes
+appear, in which case they are to be interpreted as "`is required
+to`" and "`is recommended`" respectively.

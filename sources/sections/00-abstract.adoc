@@ -1,0 +1,19 @@
+
+[abstract]
+== Abstract
+
+This document is the 2nd Revised baseline text for X.icd-schemas:
+Vendor agnostic Security Data Schemas for Integrated Cyber Defense
+Solutions
+
+Contribution C104 was accepted with additional remarks
+
+* Contributor missed to keep the revision mark vs 1st Revised text
+* In clause 10 there are trademarks names
+* In Conventions there is the missing normative statements now added
+* Interest from Quantum community to use and potentially add new dictionary
+elements
+
+Editors note too that the title of this draft Recommendation was changed
+in the 1st Revised baseline but this was not reflected in the work
+program of Q15.
