@@ -6,8 +6,9 @@ The Attribute Dictionary defines attributes and includes references
 to the events and objects in which they are used.
 
 The following list reports the Attribute Name and Attribute Description,
-along with their enumerations, in the form  <"Attribute Name">:<"Attribute
-Description">, with sub-indexed enumerative items and corresponding
+along with their enumerations, in the form
+`<"Attribute Name">:<"Attribute Description">`,
+with sub-indexed enumerative items and corresponding
 descriptions where applicable
 
 
@@ -56,23 +57,23 @@ Windows account. etc.).".
 
 ==== {blank}
 
-"LDAPAccount"	
+"LDAPAccount"
 
 ==== {blank}
 
-"WindowsAccount"	
+"WindowsAccount"
 
 ==== {blank}
 
-"AWSIAMAccount"	
+"AWSIAMAccount"
 
 ==== {blank}
 
-"GCPAccount"	
+"GCPAccount"
 
 ==== {blank}
 
-"AzureADAccount"	
+"AzureADAccount"
 
 === {blank}
 
@@ -135,11 +136,11 @@ was used to create the digital fingerprint.".
 
 ==== {blank}
 
-"Other"	
+"Other"
 
 ==== {blank}
 
-"Unknown"	
+"Unknown"
 
 ==== {blank}
 
@@ -218,51 +219,51 @@ user session.".
 
 ==== {blank}
 
-"Other"	
+"Other"
 
 ==== {blank}
 
-"Unknown"	
+"Unknown"
 
 ==== {blank}
 
-"NTLM"	
+"NTLM"
 
 ==== {blank}
 
-"Kerberos"	
+"Kerberos"
 
 ==== {blank}
 
-"Digest"	
+"Digest"
 
 ==== {blank}
 
-"OpenID"	
+"OpenID"
 
 ==== {blank}
 
-"SAML"	
+"SAML"
 
 ==== {blank}
 
-"OAUTH2.0"	
+"OAUTH2.0"
 
 ==== {blank}
 
-"PAP"	
+"PAP"
 
 ==== {blank}
 
-"CHAP"	
+"CHAP"
 
 ==== {blank}
 
-"EAP"	
+"EAP"
 
 ==== {blank}
 
-"RADIUS"	
+"RADIUS"
 
 === {blank}
 
@@ -472,15 +473,15 @@ specific value.".
 
 ==== {blank}
 
-"Low"	
+"Low"
 
 ==== {blank}
 
-"Medium"	
+"Medium"
 
 ==== {blank}
 
-"High"	
+"High"
 
 === {blank}
 
@@ -492,27 +493,27 @@ specific value.".
 
 ==== {blank}
 
-"Other"	
+"Other"
 
 ==== {blank}
 
-"Unknown"	
+"Unknown"
 
 ==== {blank}
 
-"NotConfidential"	
+"NotConfidential"
 
 ==== {blank}
 
-"Confidential"	
+"Confidential"
 
 ==== {blank}
 
-"Secret"	
+"Secret"
 
 ==== {blank}
 
-"TopSecret"	
+"TopSecret"
 
 === {blank}
 
@@ -979,23 +980,23 @@ is associated with the device.".
 
 ==== {blank}
 
-"Other"	
+"Other"
 
 ==== {blank}
 
-"Unknown"	
+"Unknown"
 
 ==== {blank}
 
-"RemoteThread"	
+"RemoteThread"
 
 ==== {blank}
 
-"AccessibilityAPIs"	
+"AccessibilityAPIs"
 
 ==== {blank}
 
-"ProcessManipulationAPIs"	
+"ProcessManipulationAPIs"
 
 === {blank}
 
@@ -1134,7 +1135,7 @@ event generation time.".
 
 ==== {blank}
 
-"Other"	
+"Other"
 
 ==== {blank}
 
@@ -1487,11 +1488,11 @@ belongs. For example. Active Directory or AWS Org ID.".
 
 ==== {blank}
 
-"Unknown"	
+"Unknown"
 
 ==== {blank}
 
-"Other"	
+"Other"
 
 === {blank}
 
@@ -1983,23 +1984,23 @@ risk.".
 
 ==== {blank}
 
-"Info"	
+"Info"
 
 ==== {blank}
 
-"Low"	
+"Low"
 
 ==== {blank}
 
-"Medium"	
+"Medium"
 
 ==== {blank}
 
-"High"	
+"High"
 
 ==== {blank}
 
-"Critical"	
+"Critical"
 
 === {blank}
 
@@ -2211,15 +2212,15 @@ attribute. which contains a data source specific value.".
 
 ==== {blank}
 
-"Unknown"	
+"Unknown"
 
 ==== {blank}
 
-"Success"	
+"Success"
 
 ==== {blank}
 
-"Failure"	
+"Failure"
 
 === {blank}
 
@@ -2325,7 +2326,7 @@ External.".
 
 ==== {blank}
 
-"Unknown"	
+"Unknown"
 
 ==== {blank}
 
@@ -2405,7 +2406,7 @@ which may contain a data source specific value.".
 
 === {blank}
 
-"Types"	
+"Types"
 
 === {blank}
 

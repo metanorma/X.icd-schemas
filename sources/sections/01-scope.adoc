@@ -5,5 +5,3 @@ This scope of this recommendation is the definition of the vendor
 agnostic security data schemas that products may use to either produce
 security data or consume security data in the context of an Integrated
 Cyber Defense (ICD) solution.
-
-

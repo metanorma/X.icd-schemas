@@ -11,61 +11,98 @@ security policy violations, as well as traces of such
 
 The ICD Security category contains the following Security events:
 
-[cols="a,a",options="header,unnumbered"]
+[cols="a,a",options="header"]
 |===
 | Events | Reports
 
-| Boot Record Detection | the detection and resolution of boot record
+| Boot Record Detection
+| the detection and resolution of boot record threats or policy violations.
+
+| Compliance events
+| the results of compliance and remediation checks.
+
+| Compliance Scan
+| the start, completion, and overall result of the scan. Detailed results are
+reported in individual Compliance events.
+
+| Email Detection
+| the detection and resolution of email threats and policy violations.
+
+| Email File Detection
+| the detection and resolution of threats and policy violations within email
+file attachments.
+
+| Email URL Detection
+| the detection and resolution of URL threats and policy violations within
+emails.
+
+| File Detection
+| the detection and resolution of file threats or policy violations.
+
+| File Response
+| file actions taken in response to a detection.
+
+| Host Network Detection
+| the detection and resolution of host network threats or policy violations.
+
+| Host Network Traffic Detection
+| the direction of threats in the network traffic data.
+
+| Incident closure
+| when an incident has been closed.
+
+| Incident creation
+| when an incident has been updated.
+
+| Kernel Detection
+| the detection and resolution of kernel resource threats or policy violations.
+
+| Memory Detection
+| the detection and resolution of memory access
 threats or policy violations.
-| Compliance events | the results of compliance and remediation checks.
-| Compliance Scan | the start, completion, and overall result of the
-scan. Detailed results are reported in individual Compliance events.
-| Email Detection | the detection and resolution of email threats
-and policy violations.
-| Email File Detection | the detection and resolution of threats and
-policy violations within email file attachments.
-| Email URL Detection | the detection and resolution of URL threats
-and policy violations within emails.
-| File Detection | the detection and resolution of file threats or
-policy violations.
-| File Response | file actions taken in response to a detection.
-| Host Network Detection | the detection and resolution of host network
-threats or policy violations.
-| Host Network Traffic Detection | the direction of threats in the
-network traffic data.
-| Incident closure | when an incident has been closed.
-| Incident creation | when an incident has been updated.
-| Kernel Detection | the detection and resolution of kernel resource
-threats or policy violations.
-| Memory Detection | the detection and resolution of memory access
-threats or policy violations.
-| Module Detection | the detection and resolution of module threats
-or policy violations.
-| Monitored Source | when an event or a message of interest is recorded
-to a monitored source. If the monitored source event can be mapped
-to a particular Unified Security event, send the corresponding Unified
-Security event, and include an Event Source object.
-| Network Detection | the detection and resolution of network threats
-or policy violations.
-| Peripheral Device Detection | the detection and resolution of peripheral
-device policy violations.
-| Process Detection | the detection and resolution of process threats
-or policy violations.
-| Process Response | process actions that were taken in response to
-a detection.
-| Registry Key Detection | the detection and resolution of registry
-key actions that were taken in response to a detection.
-| Registry Value Detection | the detection and resolution of registry
-value threats or policy violations.
-| Registry Value Response | registry value actions that were taken
-in response to detection.
-| Scan | the start, completion, and results of a scan. The scan event
-includes the number of items that were scanned and the number of detections
-that were resolved.
-| Unscannable File | files that could not be scanned and the reasons
-why.
-| User Session Detection | the detection and resolution of session
-threats or policy violations.
+
+| Module Detection
+| the detection and resolution of module threats or policy violations.
+
+| Monitored Source
+| when an event or a message of interest is recorded to a monitored source. If
+the monitored source event can be mapped to a particular Unified Security event,
+send the corresponding Unified Security event, and include an Event Source
+object.
+
+| Network Detection
+| the detection and resolution of network threats or policy violations.
+
+| Peripheral Device Detection
+| the detection and resolution of peripheral device policy violations.
+
+| Process Detection
+| the detection and resolution of process threats or policy violations.
+
+| Process Response
+| process actions that were taken in response to a detection.
+
+| Registry Key Detection
+| the detection and resolution of registry key actions that were taken in
+response to a detection.
+
+| Registry Value Detection
+| the detection and resolution of registry value threats or policy violations.
+
+| Registry Value Response
+| registry value actions that were taken in response to detection.
+
+| Scan
+| the start, completion, and results of a scan. The scan event includes the
+number of items that were scanned and the number of detections that were
+resolved.
+
+| Unscannable File
+| files that could not be scanned and the reasons why.
+
+| User Session Detection
+| the detection and resolution of session threats or policy violations.
+
 |===
 
 
@@ -80,30 +117,53 @@ on a target object.
 The ICD System Activity category contains the following System Activity
 events:
 
-[cols="a,a",options="header,unnumbered"]
+[cols="a,a",options="header"]
 |===
 | Events | Reports
 
-| Directory Activity | when a process performs an action on a directory.
-| Email Activity | non-threatening email activity.
-| Email File Activity | non-threatening files within an email.
-| Email URL Activity | non-threatening URLs within an email.
-| File Activity | when a process performs an action on a file.
-| Host Network Activity | attempted network connections – successful,
-or otherwise.
-| Host Network Traffic Activity | network traffic information.
-| Kernel Activity | when a process creates, reads, or deletes a kernel
-resource.
-| Memory Activity | when a process loads or unloads a module.
-| Network Activity | network connection activity.
-| Process Activity | when a process launches, injects, opens or terminates
-another process, successful or otherwise.
-| Registry Key Activity | when a process performs an action on a Windows
-registry key.
-| Registry Value Activity | when a process performs an action on a
-Windows registry value.
-| User Session Activity | when a user attempts a logon or logoff,
-successfully or otherwise
+| Directory Activity
+| when a process performs an action on a directory.
+
+| Email Activity
+| non-threatening email activity.
+
+| Email File Activity
+| non-threatening files within an email.
+
+| Email URL Activity
+| non-threatening URLs within an email.
+
+| File Activity
+| when a process performs an action on a file.
+
+| Host Network Activity
+| attempted network connections -- successful, or otherwise.
+
+| Host Network Traffic Activity
+| network traffic information.
+
+| Kernel Activity
+| when a process creates, reads, or deletes a kernel resource.
+
+| Memory Activity
+| when a process loads or unloads a module.
+
+| Network Activity
+| network connection activity.
+
+| Process Activity
+| when a process launches, injects, opens or terminates another process,
+successful or otherwise.
+
+| Registry Key Activity
+| when a process performs an action on a Windows registry key.
+
+| Registry Value Activity
+| when a process performs an action on a Windows registry value.
+
+| User Session Activity
+| when a user attempts a logon or logoff, successfully or otherwise
+
 |===
 
 
@@ -119,35 +179,79 @@ objects on the device.
 The ICD Evidence of Compromise category contains the following EoC
 events:
 
-[cols="a,a",options="header,unnumbered"]
+[cols="a,a",options="header"]
 |===
 | Events | Reports
-| Directory Query | information about directories that are present
-on the system.
-| Directory Remediation | directory remediation activity.
-| File Query | information about files that are present on the system.
-| File Remediation | file remediation activity.
-| Job Query | information about scheduled jobs.
-| Job Remediation | job remediation activity.
-| Kernel Query | information about kernel resources.
-| Kernel Remediation | kernel resource remediation activity.
-| Module Query | information about loaded modules.
-| Module Remediations | module remediation activity.
-| Registry Network Remediation | network remediation activity.
-| Prefetch Query | information about Windows prefetch files.
-| Process Query | information about running processes.
-| Process Remediation | process remediation activity.
-| Registry Key Remediation | registry key remediation activity.
-| Registry Value Query | information about Windows registry values.
-| Registry Value Remediation | registry value remediation activity.
-| Service Query | information about running services.
-| Service Remediation | service remediation activity.
-| Unsuccessful Query | unsuccessful attempts of Evidence of Compromise
-queries.
-| Unsuccessful Query Remediation | unsuccessful attempts at Evidence
-of Compromise remediation.
-| User Session Query | information about existing user sessions.
-| User Session Remediation | user session remediation results.
+
+| Directory Query
+| information about directories that are present on the system.
+
+| Directory Remediation
+| directory remediation activity.
+
+| File Query
+| information about files that are present on the system.
+
+| File Remediation
+| file remediation activity.
+
+| Job Query
+| information about scheduled jobs.
+
+| Job Remediation
+| job remediation activity.
+
+| Kernel Query
+| information about kernel resources.
+
+| Kernel Remediation
+| kernel resource remediation activity.
+
+| Module Query
+| information about loaded modules.
+
+| Module Remediations
+| module remediation activity.
+
+| Registry Network Remediation
+| network remediation activity.
+
+| Prefetch Query
+| information about Windows prefetch files.
+
+| Process Query
+| information about running processes.
+
+| Process Remediation
+| process remediation activity.
+
+| Registry Key Remediation
+| registry key remediation activity.
+
+| Registry Value Query
+| information about Windows registry values.
+
+| Registry Value Remediation
+| registry value remediation activity.
+
+| Service Query
+| information about running services.
+
+| Service Remediation
+| service remediation activity.
+
+| Unsuccessful Query
+| unsuccessful attempts of Evidence of Compromise queries.
+
+| Unsuccessful Query Remediation
+| unsuccessful attempts at Evidence of Compromise remediation.
+
+| User Session Query
+| information about existing user sessions.
+
+| User Session Remediation
+| user session remediation results.
+
 |===
 
 
@@ -159,15 +263,20 @@ policy violations.
 
 The ICD Information Protection contains the following events:
 
-[cols="a,a",options="header,unnumbered"]
+[cols="a,a",options="header"]
 |===
 | Events | Reports
-| Content Detection | the detection and resolution of content policy
-violations.
-| Email Content Detection | the detection and resolution of email
-content policy violations.
-| File Content Detection | the detection and resolution of file content
-policy violations.
-| Instant Message Content Detection | the detection and resolution
-of instant message content policy violations.
+
+| Content Detection
+| the detection and resolution of content policy violations.
+
+| Email Content Detection
+| the detection and resolution of email content policy violations.
+
+| File Content Detection
+| the detection and resolution of file content policy violations.
+
+| Instant Message Content Detection
+| the detection and resolution of instant message content policy violations.
+
 |===

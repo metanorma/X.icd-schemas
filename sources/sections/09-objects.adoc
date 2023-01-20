@@ -5,7 +5,7 @@ EDITOR: there are around 30 objects and some are very complex. We
 want to try and test the format and if we missed anything in the schema
 itself, e.g. OID numbers.
 
-[cols="a,a",options="unnumbered"]
+[cols="a,a"]
 |===
 h| Technical Name | `attack`
 h| Type | `object`
@@ -77,7 +77,7 @@ h| Technical Name | `technique_uid`
 !===
 |===
 
-[cols="a,a",options="unnumbered"]
+[cols="a,a"]
 |===
 h| Technical Name | `certificate`
 h| Type | `object`
@@ -177,7 +177,7 @@ h| Technical Name h| `issuer_organization`
 | Enumeration |
 |===
 
-[cols="a,a",options="unnumbered"]
+[cols="a,a"]
 |===
 h| Technical Name | `cloud_vm`
 h| Type | `object`

@@ -1,16 +1,16 @@
-= 2nd Revised baseline text for X.icd-schemas: Vendor agnostic Security Data Schemas for Integrated Cyber Defense Solutions
+= Vendor agnostic Security Data Schemas for Integrated Cyber Defense Solutions
 :docnumber: SG17-TD611
+:intended-type: R
 :doctype: recommendation
-:published-date: 02-09-2022
+:published-date: 2022-09-02
 :copyright-year: 2022
-:bureau_1: T
-:bureau_2: D
-:status: in-force-prepublished
-:group: TD611
-:workgroup: 15/17
+:provisional-name: X.icd-schemas
+:bureau: T
+:status: draft
+:group: 17
 :grouptype: study-group
-:groupyearstart: 2022
-:groupyearend: 2024
+:subgroup: 15
+:subgrouptype: question
 :source: editor
 :fullname: Arnaud Taddei
 :affiliation: DCMS
@@ -24,7 +24,6 @@
 :mn-output-extensions: xml,html,doc,pdf,rxl
 :local-cache-only:
 :data-uri-image:
-
 
 include::sections/00-abstract.adoc[]
 
