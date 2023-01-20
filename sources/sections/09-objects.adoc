@@ -1,0 +1,219 @@
+
+== Objects in the ICD Schema
+
+EDITOR: there are around 30 objects and some are very complex. We
+want to try and test the format and if we missed anything in the schema
+itself, e.g. OID numbers.
+
+[cols="a,a",options="unnumbered"]
+|===
+h| Technical Name | `attack`
+h| Type | `object`
+h| Name | Attack
+h| Description | The attack object describes the technique and associated
+tactics related to an attack. Multiple attack objects can be added
+to Security Detection and System Activity events
+2+h| Attributes attached to this object
+h| Technical Name | `technique_uid`
+| Name |
+| Description |
+| Requirement | `recommended`
+| Extension | `false`
+| Enumeration |
+| Technical Name | `technique_name`
+| Name |
+| Description |
+| Requirement | `recommended`
+| Extension | `false`
+| Enumeration |
+| Technical Name | `tactic_ids`
+| Name |
+| Description |
+| Requirement | `recommended`
+| Extension | `false`
+| Enumeration
+|
+!===
+! # ! Name ! Default value
+! 1 ! Enterprise: Initial Access ! {}
+! 2 ! Enterprise: Execution ! {}
+! 3 ! Enterprise: Persistance ! {}
+! 4 ! Enterprise: Defence Evasion ! {}
+! 5 ! Enterprise: Priviledge Escalation ! {}
+! 6 ! Enterprise: Credential Access ! {}
+! 7 ! Enterprise: Discovery ! {}
+! 8 ! Enterprise: Lateral Movement ! {}
+! 9 ! Enterprise: Collection ! {}
+! 10 ! Enterprise: Exfiltration ! {}
+! 11 ! Enterprise: Command and Control ! {}
+! 12 ! PRE-ATT&CK: Priority Definition Planning ! {}
+! 13 ! PRE-ATT&CK: Priority Definition Direction ! {}
+! 14 ! PRE-ATT&CK: Target Selection ! {}
+! 15 ! PRE-ATT&CK: Technical Information Gathering ! {}
+! 16 ! PRE-ATT&CK: People Information Gathering ! {}
+! 17 ! PRE-ATT&CK: Organization Information Gathering ! {}
+! 18 ! PRE-ATT&CK: Technical Weakness Identification ! {}
+! 19 ! PRE-ATT&CK: People Weakness Identification ! {}
+! 20 ! PRE-ATT&CK: Organization Weakness Identification ! {}
+! 21 ! PRE-ATT&CK: Adversary OPSEC ! {}
+! 22 ! PRE-ATT&CK: Establish & Maintain Infrastructure ! {}
+! 23 ! PRE-ATT&CK: Personna Development ! {}
+! 24 ! PRE-ATT&CK: Build Capabilities ! {}
+! 25 ! PRE-ATT&CK: Test Capabilities ! {}
+! 26 ! PRE-ATT&CK: Stage Capabilities ! {}
+! 27 ! Mobile: Initial Access ! {}
+! 28 ! Mobile: Persistence ! {}
+! 29 ! Mobile: Priviledge Escalation ! {}
+! 30 ! Mobile: Defense Evasion ! {}
+! 31 ! Mobile: Credential Access ! {}
+! 32 ! Mobile: Discovery ! {}
+! 33 ! Mobile: Lateral Movement ! {}
+! 34 ! Mobile: Effects ! {}
+! 35 ! Mobile: Collection ! {}
+! 36 ! Mobile: Exfiltration ! {}
+! 37 ! Mobile: Command and Control ! {}
+! 38 ! Mobile: Network Effects ! {}
+! 39 ! Mobile: Remote Service Effects ! {}
+!===
+|===
+
+[cols="a,a",options="unnumbered"]
+|===
+h| Technical Name | `certificate`
+h| Type | `object`
+h| Name | Certificate
+h| Description | The certificate object describes the issuer and expiry
+of a certificate
+2+h| Attributes attached to this object
+h| Technical Name | `Version`
+h| Name h| Version
+| Description | The Certificate Version.
+| Requirement | `recommended`
+| Extension |
+| Enumeration |
+h| Technical Name h| `serial`
+| Name |
+| Description | The certificate serial number.
+| Requirement | `recommended`
+| Extension | `false`
+| Enumeration |
+h| Technical Name h| `start_time`
+| Name | Valid From
+| Description | The time at which the certificate becomes valid.
+| Requirement | `recommended`
+| Extension | `false`
+| Enumeration |
+h| Technical Name h| `end_time`
+| Name | Valid To
+| Description | The time at which the certificate becomes invalid.
+| Requirement | `recommended`
+| Extension | `false`
+| Enumeration |
+h| Technical Name h| `is_valid`
+| Name |
+| Description |
+| Requirement | `recommended`
+| Extension | `false`
+| Enumeration |
+h| Technical Name h| `subject_name`
+| Name |
+| Description |
+| Requirement | `recommended`
+| Extension |
+| Enumeration |
+h| Technical Name h| `subject_organization`
+| Name |
+| Description |
+| Requirement | `recommended`
+| Extension |
+| Enumeration |
+h| Technical Name h| `subject_org_unit`
+| Name |
+| Description |
+| Requirement | `recommended`
+| Extension |
+| Enumeration |
+h| Technical Name h| `subject_email`
+| Name |
+| Description |
+| Requirement | `recommended`
+| Extension |
+| Enumeration |
+h| Technical Name h| `subject_country`
+| Name |
+| Description |
+| Requirement | `recommended`
+| Extension |
+| Enumeration |
+h| Technical Name h| `subject_state`
+| Name |
+| Description |
+| Requirement | `recommended`
+| Extension |
+| Enumeration |
+h| Technical Name h| `subject_city`
+| Name |
+| Description |
+| Requirement | `recommended`
+| Extension |
+| Enumeration |
+h| Technical Name h| `subject_street`
+| Name |
+| Description |
+| Requirement | `recommended`
+| Extension |
+| Enumeration |
+h| Technical Name h| `issuer_name`
+| Name |
+| Description |
+| Requirement | `recommended`
+| Extension | `false`
+| Enumeration |
+h| Technical Name h| `issuer_organization`
+| Name |
+| Description |
+| Requirement | `recommended`
+| Extension |
+| Enumeration |
+|===
+
+[cols="a,a",options="unnumbered"]
+|===
+h| Technical Name | `cloud_vm`
+h| Type | `object`
+h| Name | Cloud Hosted VM
+h| Description | The cloud-hosted vm object describes the region and
+instance for a cloud-hosted virtual machine.
+2+h| Attributes attached to this object
+h| Technical Name h| `instance_uid`
+| Name |
+| Description | The unique identifier of the cloud hosted virtual
+machine instance.
+| Requirement | `recommended`
+| Extension |
+| Enumeration |
+h| Technical Name h| `dc_region`
+| Name |
+| Description |
+h| Requirement h| `recommended`
+| Extension |
+| Enumeration | {}
+h| Technical Name h| `vpc_uid`
+| Name |
+| Description |
+| Requirement | `recommended`
+| Extension |
+| Enumeration | {}
+h| Technical Name h| `subnet_uid`
+| Name |
+| Description |
+| Requirement | `recommended`
+| Extension |
+| Enumeration | {}
+h| Technical Name h| `autoscale_uid`
+| Name |
+| Description |
+| Requirement | `recommended`
+| Extension |
+| Enumeration | {}
+|===

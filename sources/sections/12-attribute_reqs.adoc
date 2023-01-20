@@ -1,0 +1,98 @@
+
+== Attribute requirements in the ICD Schema
+
+Each ICD event attribute is either Required, Recommended or Optional:
+
+[cols="a,a", options="header,unnumbered"]
+|===
+| Attributes requirements | Description
+
+| Required attributes
+| ensure that the event data is minimally normalized to the Integrated
+Cyber Defense Schema.
+
+All products should supply the required attributes with each event.
+
+If a required attribute is not provided, the collector supplies a
+default value.
+
+| Recommended attributes
+| provide an improved view to cross-product data and allow for meaningful
+correlation.
+
+If the recommended information is available within the product, it
+must be supplied.
+
+If a recommended attribute is not provided, the attribute must not
+be included (null values are not a allowed).
+
+| Optional attributes
+| provide detailed event information. One or more products may supply
+optional attributes.
+|===
+
+EDITOR: we shall describe '`Reserved`'
+
+=== Required attributes in the ICD Schema
+
+The required attributes in the ICD schema are:
+
+[cols="a,a", options="header,unnumbered"]
+|===
+| Group | Attributes
+| Classification |
+* category_id (default = 0; Unknown)
+* type_id (default = 0; Unknown)
+* id (default = 0; Unknown)
+* version
+* severity_id  (default = 0; Unknown)
+
+| Primary |
+* device_time
+
+For aggregated events
+
+* device_end_time +
+This attribute is optional, unless the count is greater than 1. If
+the count is greater than 1 and device_end_time is missing, set device_end_time
+to the device_time
+|===
+
+
+=== Recommended attributes in the ICD Schema
+
+The recommended attributes in the ICD schema are:
+
+[cols="a,a", options="header,unnumbered"]
+|===
+| Group | Attributes
+| Primary | Event type-specific attributes for example, the file,
+process, policy, and threat objects that are related to the event.
+| Message | message
+| Origination |
+* device_name
+* product_name
+* product_ver
+* user_name
+
+In addition, the following are the attribute extensions:
+
+* customer_uid
+* device_domain
+* domain_uid
+* device_ip
+* device_networks
+* org_unit_uid
+* device_os_name
+* device_os_type_id
+* device_type
+* feature_name
+* feature_path
+* feature_type
+* feature_uid
+* feature_ver
+* product_lang
+* product_uid
+* seq_num
+* user_uid
+|===
