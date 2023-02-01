@@ -105,8 +105,9 @@ provide information in addition to *User Name*.
 | Technical Name | `version`
 | Name |
 | Description | The event type version, in the form major.minor.
-| For example: 1.7. Event consumers use the version to determine what
+For example: 1.7. Event consumers use the version to determine what
 the event attributes represent.
+
 | Requirement | `required`
 | Group | `classification`
 | Extension | `false`
