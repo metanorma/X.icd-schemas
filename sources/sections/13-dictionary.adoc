@@ -25,12 +25,12 @@ descriptions where applicable
 
 === {{attribute_obj.caption}}
 
-Key:: {{attribute_key}}
-Description:: {{attribute_obj.description}}
-Type:: {{attribute_obj.type}}
+Key:: `{{attribute_key}}`
+Description:: {{attribute_obj.description | strip_html}}
+Type:: `{{attribute_obj.type}}`
 
 {% if attribute_obj.sibling %}
-Sibling:: {{attribute_obj.sibling}}
+Sibling:: `{{attribute_obj.sibling}}`
 {% endif %}
 
 {% if attribute_obj.is_array %}
@@ -38,7 +38,7 @@ Is array:: {{attribute_obj.is_array}}
 {% endif %}
 
 {% if attribute_obj.default %}
-Default value:: {{attribute_obj.default}}
+Default value:: `{{attribute_obj.default}}`
 {% endif %}
 
 {% if attribute_obj.enum %}
