@@ -18,6 +18,8 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v3
+        with:
+          submodules: recursive
 
       - name: Metanorma cache
         uses: actions-mn/cache@v1
