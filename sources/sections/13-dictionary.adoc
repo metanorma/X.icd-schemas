@@ -33,7 +33,7 @@ Type:: {{attribute_obj.type}}
 Sibling:: {{attribute_obj.sibling}}
 {% endif %}
 
-{% if attribute_obj.sibling %}
+{% if attribute_obj.is_array %}
 Is array:: {{attribute_obj.is_array}}
 {% endif %}
 
