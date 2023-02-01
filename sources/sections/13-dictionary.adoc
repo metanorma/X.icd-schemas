@@ -44,16 +44,23 @@ Default value:: `{{attribute_obj.default}}`
 {% if attribute_obj.enum %}
 {% if attribute_obj.enum.size > 0 %}
 Enumerable values:: {blank}
+
+.{{attribute_obj.caption}} enumerable values
+[col="a,a,a",options="header"]
+|===
+| Value | Name | Description
+
 {% for enum_item in attribute_obj.enum %}
 {% assign enum_key = enum_item[0] %}
 {% assign enum_obj = enum_item[1] %}
 
-Value:: {{enum_key}}
-Name:: {{enum_obj.type}}
-Description:: {{enum_obj.description}}
+| `{{enum_key}}`
+| {{enum_obj.caption}}
+| {{enum_obj.description | strip_html}}
 
 {% endfor %}
---
+
+|===
 
 {% else %}
 EDITOR: WARNING - this key contains an empty `enum: {}`.
