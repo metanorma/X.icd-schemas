@@ -37,6 +37,10 @@ Sibling:: {{attribute_obj.sibling}}
 Is array:: {{attribute_obj.is_array}}
 {% endif %}
 
+{% if attribute_obj.default %}
+Default value:: {{attribute_obj.default}}
+{% endif %}
+
 {% if attribute_obj.enum %}
 Enumerable values::
 --
