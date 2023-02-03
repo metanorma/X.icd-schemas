@@ -25,25 +25,27 @@ descriptions where applicable
 
 === {{attribute_obj.caption}}
 
-Key:: `{{attribute_key}}`
-Description:: {{attribute_obj.description | strip_html}}
-Type:: `{{attribute_obj.type}}`
+// Key:: `{{attribute_key}}`
 
-{% if attribute_obj.sibling %}
-Sibling:: `{{attribute_obj.sibling}}`
-{% endif %}
+{{attribute_obj.description | strip_html}}
 
-{% if attribute_obj.is_array %}
-Is array:: {{attribute_obj.is_array}}
-{% endif %}
+// Type:: `{{attribute_obj.type}}`
 
-{% if attribute_obj.default %}
-Default value:: `{{attribute_obj.default}}`
-{% endif %}
+// {% if attribute_obj.sibling %}
+// Sibling:: `{{attribute_obj.sibling}}`
+// {% endif %}
+
+// {% if attribute_obj.is_array %}
+// Is array:: {{attribute_obj.is_array}}
+// {% endif %}
+
+// {% if attribute_obj.default %}
+// Default value:: `{{attribute_obj.default}}`
+// {% endif %}
 
 {% if attribute_obj.enum %}
-{% if attribute_obj.enum.size > 0 %}
-Enumerable values:: {blank}
+{% if attribute_obj.enum.size > 0 and attribute_key != "category_ids" %}
+// Enumerable values:: {blank}
 
 .{{attribute_obj.caption}} enumerable values
 [col="a,a,a",options="header"]
@@ -62,8 +64,8 @@ Enumerable values:: {blank}
 
 |===
 
-{% else %}
-EDITOR: WARNING - this key contains an empty `enum: {}`.
+// {% else %}
+// EDITOR: WARNING - this key contains an empty `enum: {}`.
 {% endif %}
 {% endif %}
 
