@@ -1,0 +1,80 @@
+= ITU-T X.icd-schemas
+
+This work item belongs to ITU-T SG 17.
+
+// image:https://github.com/openitu/X.icd-schemas/actions/workflows/generate.yml/badge.svg)["generate", link="https://github.com/openitu/X.icd-schemas/actions/workflows/generate.yml"]
+
+This document is available in its rendered forms here:
+
+* https://openitu.github.io/X.icd-schemas/[X.icd-schemas: Vendor agnostic Security Data Schemas for Integrated Cyber Defense Solutions]
+
+
+== General
+
+This repository contains the document:
+
+* X.icd-schemas Vendor agnostic Security Data Schemas for Integrated Cyber Defense Solutions
+
+== Structure
+
+`sources/`::
+source of the documents and models
+
+`_site/`::
+(automatically generated after processing) published document.
+
+
+== Usage
+
+This repository uses `metanorma` to run these processes.
+
+
+== Installing build tools
+
+See https://www.metanorma.org/install/
+
+
+== Building the document
+
+=== Local installs
+
+If you use a locally installed Metanorma, for the first time, run:
+
+[source,sh]
+----
+metanorma site generate --agree-to-terms
+----
+
+Subsequently, just run:
+
+[source,sh]
+----
+metanorma site generate
+----
+
+NOTE: See https://www.metanorma.org/install/usage/ for details.
+
+
+=== Docker
+
+If you don't want to deal with local dependencies, use the docker
+version by:
+
+[source,sh]
+----
+docker run \
+  -v "$(pwd)":/metanorma \
+  -v "${HOME}/.fontist/fonts":/config/fonts \
+  -w /metanorma \
+  metanorma/metanorma \
+  metanorma site generate --agree-to-terms
+----
+
+NOTE: See https://www.metanorma.org/install/docker/ for details.
+
+
+== License
+
+These documents are private to ITU-T SG 17; the copyright of such documents (as
+well as their converted text) remain unchanged.
+
