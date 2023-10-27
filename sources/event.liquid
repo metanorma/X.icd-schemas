@@ -18,8 +18,16 @@ Extends:: `{{ event.extends }}`
 
 {% if event.profiles %}
 Profiles::
-{% for profile in profiles %}
+{% for profile in event.profiles %}
 ** {{ profile }}
+{% endfor %}
+{% endif %}
+
+{% if event.constraints %}
+Constraints::
+{% for constraint in event.constraints %}
+`{{ constraint[0] }}`: {% for constraint_condition in constraint[1] %}`{{ constraint_condition }}`{% unless forloop.last %}, {% endunless %}{% endfor %}
+
 {% endfor %}
 {% endif %}
 
