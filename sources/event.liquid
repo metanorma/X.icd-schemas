@@ -1,0 +1,28 @@
+=== {{ event.caption }}
+
+{% if event.uid %}
+UID:: {{ event.uid }}
+{% endif %}
+
+{% if event.name %}
+Technical name:: `{{ event.name }}`
+{% endif %}
+
+{% if event.category %}
+Category:: `{{ event.category }}`
+{% endif %}
+
+{% if event.extends %}
+Extends:: `{{ event.extends }}`
+{% endif %}
+
+{% if event.profiles %}
+Profiles::
+{% for profile in profiles %}
+** {{ profile }}
+{% endfor %}
+{% endif %}
+
+Description:: {{ event.description | strip_html }}
+
+{% include "event_attributes", attrs: event.attributes, depth: 3 %}

@@ -4,6 +4,37 @@
 EDITOR: There are dozens, perhaps hundreds of events so we will start
 with the base event, the most important
 
+GENERAL ATTEMPT (DOESN'T WORK):
+
+[yaml2text,sections/10-events.yaml,paths]
+----
+{% for path in paths %}
+
+Filename: {{ path }}
+
+[json2text,{{ path }},event]
+--
+include::../event.liquid[]
+--
+
+{% endfor %}
+----
+
+
+ENUMERATED ATTEMPT (WORKS):
+
+[json2text,ocsf-schema/events/application/api.json,event]
+--
+include::../event.liquid[]
+--
+
+[json2text,ocsf-schema/events/application/application.json,event]
+--
+include::../event.liquid[]
+--
+
+
+////
 [cols="a,a"]
 |===
 h| Technical Name | `base`
@@ -188,3 +219,4 @@ but it could be any other name that identifies the product. For example,
 | Extension |
 | Enumeration |
 |===
+////
