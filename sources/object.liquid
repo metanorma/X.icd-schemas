@@ -1,0 +1,36 @@
+=== {{ object.caption }}
+
+{% if object.name %}
+Technical name:: `{{ object.name }}`
+{% endif %}
+
+{% if object.category %}
+Category:: `{{ object.category }}`
+{% endif %}
+
+{% if object.extends %}
+Extends:: `{{ object.extends }}`
+{% endif %}
+
+{% if object.observable %}
+Observable:: {{ object.observable }}
+{% endif %}
+
+{% if object.profiles %}
+Profiles::
+{% for profile in object.profiles %}
+** {{ profile }}
+{% endfor %}
+{% endif %}
+
+{% if object.constraints %}
+Constraints::
+{% for constraint in object.constraints %}
+`{{ constraint[0] }}`: {% for constraint_condition in constraint[1] %}`{{ constraint_condition }}`{% unless forloop.last %}, {% endunless %}{% endfor %}
+
+{% endfor %}
+{% endif %}
+
+Description:: {{ object.description | strip_html }}
+
+{% include "event_attributes", attrs: object.attributes, depth: 3 %}
