@@ -4,11 +4,11 @@
 EDITOR: There are dozens, perhaps hundreds of events so we will start
 with the base event, the most important
 
-GENERAL ATTEMPT (DOESN'T WORK):
+GENERAL ATTEMPT:
 
-[yaml2text,sections/10-events.yaml,paths]
+[json2text,sections/10-events.json,data]
 ----
-{% for path in paths %}
+{% for path in data.paths %}
 
 Filename: {{ path }}
 
@@ -21,17 +21,17 @@ include::../event.liquid[]
 ----
 
 
-ENUMERATED ATTEMPT (WORKS):
+// ENUMERATED ATTEMPT (WORKS):
 
-[json2text,ocsf-schema/events/application/api.json,event]
---
-include::../event.liquid[]
---
+// [json2text,ocsf-schema/events/application/api.json,event]
+// --
+// include::../event.liquid[]
+// --
 
-[json2text,ocsf-schema/events/application/application.json,event]
---
-include::../event.liquid[]
---
+// [json2text,ocsf-schema/events/application/application.json,event]
+// --
+// include::../event.liquid[]
+// --
 
 
 ////
