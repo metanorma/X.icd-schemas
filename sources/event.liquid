@@ -1,0 +1,36 @@
+=== {{ event.caption }}
+
+{% if event.uid %}
+UID:: {{ event.uid }}
+{% endif %}
+
+{% if event.name %}
+Technical name:: `{{ event.name }}`
+{% endif %}
+
+{% if event.category %}
+Category:: `{{ event.category }}`
+{% endif %}
+
+{% if event.extends %}
+Extends:: `{{ event.extends }}`
+{% endif %}
+
+{% if event.profiles %}
+Profiles::
+{% for profile in event.profiles %}
+** {{ profile }}
+{% endfor %}
+{% endif %}
+
+{% if event.constraints %}
+Constraints::
+{% for constraint in event.constraints %}
+`{{ constraint[0] }}`: {% for constraint_condition in constraint[1] %}`{{ constraint_condition }}`{% unless forloop.last %}, {% endunless %}{% endfor %}
+
+{% endfor %}
+{% endif %}
+
+Description:: {{ event.description | strip_html }}
+
+{% include "event_attributes", attrs: event.attributes, depth: 3 %}
