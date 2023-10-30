@@ -9,8 +9,6 @@ itself, e.g. OID numbers.
 ----
 {% for path in data.paths %}
 
-Filename: {{ path }}
-
 [json2text,{{ path }},object]
 --
 include::../object.liquid[]

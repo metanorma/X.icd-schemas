@@ -15,7 +15,7 @@
 {{ equalsigns }} {{attribute_key}}
 
 {% if attribute_obj.description %}
-Description:: {{attribute_obj.description}}
+Description:: {{attribute_obj.description |  strip_html }}
 {% endif %}
 
 {% if attribute_obj.group %}
