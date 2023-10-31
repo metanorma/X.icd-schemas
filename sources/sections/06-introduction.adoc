@@ -27,3 +27,13 @@ more interesting and important activity, but also allows for a community
 of organizations that share the same objectives to shorten the time
 it takes to analyze data, and collaborate where possible against common
 threat actors.
+
+=== Introduction to the Framework and Schema
+
+This document describes the Framework and Schema and its taxonomy, including
+the core cybersecurity event schema built with the framework.1
+The framework is made up of a set of data types and objects, an attribute dictionary, and the taxonomy. It
+is not restricted to the cybersecurity domain nor to events, however the initial focus of the framework has
+been a schema for cybersecurity events. The core schema is intended to be
+agnostic to implementations. The schema framework definition files and the resulting normative schema are
+written as JSON.

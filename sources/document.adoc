@@ -1,5 +1,5 @@
 = Vendor agnostic Security Data Schemas for Integrated Cyber Defense Solutions
-:docnumber: SG17-TD611
+:docnumber: SG17-TD990
 :intended-type: R
 :doctype: recommendation
 :published-date: 2022-09-02
@@ -41,20 +41,30 @@ include::sections/05-conventions.adoc[]
 
 include::sections/06-introduction.adoc[]
 
-include::sections/07-overview.adoc[]
+include::sections/personas.adoc[]
 
-include::sections/08-categories.adoc[]
+include::sections/taxonomies.adoc[]
 
-include::sections/09-objects.adoc[]
+include::sections/attributes-overview.adoc[]
 
-include::sections/10-events.adoc[]
+include::sections/dictionary.adoc[]
 
-include::sections/11-attribute_groups.adoc[]
+include::sections/objects.adoc[]
 
-include::sections/12-attribute_reqs.adoc[]
+include::sections/events-overview.adoc[]
 
-include::sections/13-dictionary.adoc[]
+include::sections/events.adoc[]
 
-include::sections/aa-schemas.adoc[]
+include::sections/categories-overview.adoc[]
+
+include::sections/categories.adoc[]
+
+include::sections/profiles-overview.adoc[]
+
+include::sections/profiles.adoc[]
+
+include::sections/extensions-overview.adoc[]
+
+include::sections/extensions.adoc[]
 
 include::sections/az-bibliography.adoc[]

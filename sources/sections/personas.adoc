@@ -1,0 +1,16 @@
+
+== Personas
+
+There are four personas that are users of the framework and the schema built with the framework:
+
+* the author persona is who creates or extends the schema,
+* the producer persona is who generates events natively into the schema, or via a translation from another schema,
+* the mapper persona is who translates or creates events from another source to the schema,
+* the analyst persona is the end user who searches the data, writes rules or analytics against the schema, or creates reports from the schema.
+** Note:  The analyst may also be considered the consumer persona.
+
+For example, a vendor may write a translation from some external source format into the schema but also
+extend the schema to accommodate source specific attributes or operations. The vendor is operating as both
+the mapper and author personas. A CDC or SOC analyst that collects the data in a SIEM system writes rules against
+the events and searches events during investigation. The CDC or SOC analyst is operating as the analyst persona.
+Finally, a vendor that emits events natively in the schema's form, even if translated, is a data producer.

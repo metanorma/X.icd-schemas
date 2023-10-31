@@ -1,5 +1,5 @@
 
-== Events in the ICD Schema
+=== Events in the ICD Schema
 
 EDITOR: There are dozens, perhaps hundreds of events so we will start
 with the base event, the most important

@@ -1,5 +1,9 @@
 
 == Abbreviations and acronyms
 
+CDC:: Cyber Defence Centre (X.1060)
 EoC:: Evidence of Compromise
 ICD:: Integrated Cyber Defense
+JSON:: JavaScript ObjectNotation
+SIEM:: Security Information and Event Management
+SOC:: Security Operation Center
