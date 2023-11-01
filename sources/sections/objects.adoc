@@ -1,5 +1,5 @@
 
-== Objects in the ICD Schema
+=== Objects in the ICD Schema
 
 EDITOR: there are around 30 objects and some are very complex. We
 want to try and test the format and if we missed anything in the schema

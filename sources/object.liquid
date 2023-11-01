@@ -1,4 +1,4 @@
-=== {{ object.caption }}
+==== {{ object.caption }}
 
 {% if object.name %}
 Technical name:: `{{ object.name }}`
@@ -33,4 +33,4 @@ Constraints::
 
 Description:: {{ object.description | strip_html }}
 
-{% include "event_attributes", attrs: object.attributes, depth: 3 %}
+{% include "event_attributes", attrs: object.attributes, depth: 4 %}

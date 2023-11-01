@@ -1,4 +1,4 @@
-=== {{ event.caption }}
+==== {{ event.caption }}
 
 {% if event.uid %}
 UID:: {{ event.uid }}
@@ -33,4 +33,4 @@ Constraints::
 
 Description:: {{ event.description | strip_html }}
 
-{% include "event_attributes", attrs: event.attributes, depth: 3 %}
+{% include "event_attributes", attrs: event.attributes, depth: 4 %}
