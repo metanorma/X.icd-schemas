@@ -1,0 +1,13 @@
+=== Profiles
+
+[json2text,sections/profiles.json,data]
+----
+{% for path in data.paths %}
+
+[json2text,{{ path }},event]
+--
+include::../profiles.liquid[]
+--
+
+{% endfor %}
+----

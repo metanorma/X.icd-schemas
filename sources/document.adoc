@@ -2,8 +2,8 @@
 :docnumber: SG17-TD990
 :intended-type: R
 :doctype: recommendation
-:published-date: 2022-09-02
-:copyright-year: 2022
+:published-date: 2023-11-03
+:copyright-year: 2023
 :provisional-name: X.icd-schemas
 :bureau: T
 :status: draft
@@ -15,8 +15,8 @@
 :subgrouptype: question
 :source: editor
 :fullname: Arnaud Taddei
-:affiliation: DCMS
-:address: UK
+:affiliation: Broadcom
+:address: USA
 :phone: +41795061129
 :email: Arnaud.Taddei@broadcom.com
 :language: en
@@ -66,5 +66,11 @@ include::sections/profiles.adoc[]
 include::sections/extensions-overview.adoc[]
 
 include::sections/extensions.adoc[]
+
+include::sections/appendix-guidelines.adoc[]
+
+include::sections/appendix-data-types.dadoc[]
+
+include::sections/appendix-schema-construction.adoc[]
 
 include::sections/az-bibliography.adoc[]

@@ -7,7 +7,8 @@ There are four personas that are users of the framework and the schema built wit
 * the producer persona is who generates events natively into the schema, or via a translation from another schema,
 * the mapper persona is who translates or creates events from another source to the schema,
 * the analyst persona is the end user who searches the data, writes rules or analytics against the schema, or creates reports from the schema.
-** Note:  The analyst may also be considered the consumer persona.
++
+NOTE:  The analyst may also be considered the consumer persona.
 
 For example, a vendor may write a translation from some external source format into the schema but also
 extend the schema to accommodate source specific attributes or operations. The vendor is operating as both

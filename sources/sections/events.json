@@ -1,11 +1,11 @@
 {
   "paths": [
+    "ocsf-schema/events/base_event.json",
     "ocsf-schema/events/application/api.json",
     "ocsf-schema/events/application/application.json",
     "ocsf-schema/events/application/application_lifecycle.json",
     "ocsf-schema/events/application/web_resource_access_activity.json",
     "ocsf-schema/events/application/web_resources_activity.json",
-    "ocsf-schema/events/base_event.json",
     "ocsf-schema/events/discovery/config_state.json",
     "ocsf-schema/events/discovery/discovery.json",
     "ocsf-schema/events/discovery/inventory_info.json",
