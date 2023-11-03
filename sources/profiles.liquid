@@ -1,0 +1,36 @@
+==== {{ profile.caption }}
+
+{% if profile.uid %}
+UID:: {{ profile.uid }}
+{% endif %}
+
+{% if profile.name %}
+Technical name:: `{{ profile.name }}`
+{% endif %}
+
+{% if profile.category %}
+Category:: `{{ profile.category }}`
+{% endif %}
+
+{% if profile.extends %}
+Extends:: `{{ profile.extends }}`
+{% endif %}
+
+{% if profile.profiles %}
+Profiles::
+{% for profile in profile.profiles %}
+** {{ profile }}
+{% endfor %}
+{% endif %}
+
+{% if profile.constraints %}
+Constraints::
+{% for constraint in profile.constraints %}
+`{{ constraint[0] }}`: {% for constraint_condition in constraint[1] %}`{{ constraint_condition }}`{% unless forloop.last %}, {% endunless %}{% endfor %}
+
+{% endfor %}
+{% endif %}
+
+Description:: {{ profile.description | strip_html }}
+
+{% include "profile_attributes", attrs: profile.attributes, depth: 4 %}
