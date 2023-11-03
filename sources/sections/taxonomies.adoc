@@ -1,2 +1,32 @@
 
 == Taxonomies
+
+There are 5 fundamental constructs of the taxonomy:
+
+. Data Types, Attributes and Arrays
+. Event Classes
+. Categories
+. Profiles
+. Extensions
+
+The scalar data types are defined on top of primitive data types such as strings, integers, floating point numbers and booleans. Examples of scalar data types are Timestamp, IP Address, MAC Address, and User Name.
+
+An attribute is a unique identifier name for a specific validatable data type, either scalar or complex.
+
+Complex data types are termed objects. An object is a collection of contextually related attributes, usually representing an entity, and may include other objects. Each object is also a data type. Examples of object data types are Process, Device, User, Malware and File.
+
+Arrays support any of the data types.
+
+Most scalar data types have constraints on their valid values or ranges, for example Enum integer types are constrained to a specific set of integer values. Enum integer typed attributes are an important part of the framework constructs and used in place of strings where possible to ensure consistency.
+
+Complex data types, or objects, can also be validated based on their particular structure and attribute requirements. Attribute requirements are discussed in a subsequent section.
+
+The attribute dictionary of all available attributes, and their types are the building blocks of the framework. Event classes are particular sets of attributes from the dictionary.
+
+Events are represented by event classes which structure a set of attributes that attempt to describe the semantics of the event in detail. An individual event is an instance of an event class. Event classes have schema-unique IDs. Individual events may have globally unique IDs.
+
+Each event class is grouped by category, and has a unique category_uid attribute value which is the category identifier. Categories also have friendly name captions, such as System Activity, Network Activity, Findings, etc. Event classes are grouped into categories for a number of purposes: a container for a particular event domain, documentation convenience and search, reporting, storage partitioning or access control to name a few.
+
+Profiles overlay additional related attributes into event classes and objects allowing for cross-category event class augmentation and filtering. Event classes register for profiles that when optionally applied, can be mixed into event classes and objects, by a producer or mapper. For example, System Activity event classes may also include attributes for malware detection or vulnerability information when an endpoint security product is the data source. Network Activity event classes from a host computer may carry the device, process and user associated with the activity. A Security Control profile or Host profile can be applied in these cases, respectively.
+
+Finally, extensions allow the schema to be extended using the framework without modification of the core schema. New attributes, objects, event classes, categories and profiles are all available to extensions. Existing profiles can be applied to extensions, and new extension profiles can be applied to core event classes and objects as well as to other extensions.
