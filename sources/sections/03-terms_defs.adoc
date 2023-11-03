@@ -37,5 +37,5 @@
 
 ==== integrated cyber defense
 
-An initiative for interoperability of security products, technologies
-and services.
+an initiative for interoperability of security products, technologies
+and services
