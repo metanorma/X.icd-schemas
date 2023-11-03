@@ -1,0 +1,12 @@
+{
+	"paths": [
+		"ocsf-schema/profiles/cloud.json",
+		"ocsf-schema/profiles/container.json",
+		"ocsf-schema/profiles/datetime.json",
+		"ocsf-schema/profiles/firewall.json",
+		"ocsf-schema/profiles/host.json",
+		"ocsf-schema/profiles/network_proxy.json",
+		"ocsf-schema/profiles/person.json",
+		"ocsf-schema/profiles/security_control.json"
+	]
+}
