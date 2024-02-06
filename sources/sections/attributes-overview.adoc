@@ -1,7 +1,7 @@
 
 == Data types, attributes, objects
 
-Attributes and the dictionary are the building blocks of a schema. This section discusses OCSF attribute conventions, requirements, groupings, constraints, and some of the special attributes used in the core cybersecurity schema.
+Attributes and the dictionary are the building blocks of a schema. This section discusses the schema attribute conventions, requirements, groupings, constraints, and some of the special attributes used in the core cybersecurity schema.
 
 In general, an attribute from the dictionary has the same meaning everywhere it is used in a schema. Some attributes can have a meaning that is overloaded depending on the event class context where they are used. In these cases the description of the attribute will be generic and include a ‘see specific usage’ instruction to override its description within the event class context rather than in the dictionary.
 
@@ -117,6 +117,7 @@ The time when the event was last updated or enriched. It must be equal or greate
 The start and end event times of the Base Event class are used when the event represents some activity that happened over a time range, for example a vulnerability or virus scan, or a discovery run. The other use-case is event aggregation. Aggregation is a mechanism that allows for a number of events of the same event type to be summarized into one for more efficient processing. For example netflow events. In this use case, the count integer attribute is also populated.
 
 ==== Time Zone
+
 The time zone where the event occurred is represented by the timezone_offset attribute of data type Integer. Although time attributes are otherwise UTC except for the pass through attribute original_time, most security use cases benefit from knowing what time of day the event occurred at the event source.
 
 timezone_offset is the number of minutes that the reported event time is ahead or behind UTC, in the range -1,080 to +1,080. It is a recommended attribute of the Base Event class.

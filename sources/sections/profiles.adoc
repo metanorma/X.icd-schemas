@@ -4,7 +4,7 @@
 ----
 {% for path in data.paths %}
 
-[json2text,{{ path }},event]
+[json2text,{{ path }},profile]
 --
 include::../profiles.liquid[]
 --
