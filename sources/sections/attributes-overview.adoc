@@ -9,11 +9,11 @@ In general, an attribute from the dictionary has the same meaning everywhere it 
 
 The scheam adheres to naming conventions in order to more easily identify attributes with similar semantics. These conventions take the form of standard suffixes and prefixes. The standard suffixes are:
 
-_id, _ids, _uid, _uuid, _ip, _name, _info, _detail, _time, _dt, _process, _ver
+`_id, _ids, _uid, _uuid, _ip, _name, _info, _detail, _time, _dt, _process, _ver`
 
 ==== Arrays
 
-Attribute names used for arrays end with s. For example category_ids. A MITRE ATT&CKTM array is named attacks.
+Attribute names used for arrays end with s. For example `category_ids`. A MITRE ATT&CKTM array is named attacks.
 
 ==== Unique IDs
 

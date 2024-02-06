@@ -1,4 +1,4 @@
-[annex]
+[appendix]
 
 == Schema Construction and Extension
 
