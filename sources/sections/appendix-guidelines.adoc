@@ -1,4 +1,4 @@
-[annex]
+[appendix]
 
 == Guidelines for attribute names
 
