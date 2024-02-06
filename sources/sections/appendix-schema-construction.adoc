@@ -37,7 +37,7 @@ To extend the schema create a new directory using a unique extension name (e.g. 
 | profiles/	        | Create to define new profiles
 |===
 
-In order to reserve an ID space, and make your extension public, add a UID to your extension name in the OCSF Extensions Registry here to avoid collisions with core or other extension schemas. For example, the dev extension would have a row in the table as follows:
+In order to reserve an ID space, and make your extension public, add a UID to your extension name in the Extensions Registry here to avoid collisions with core or other extension schemas. For example, the dev extension would have a row in the table as follows:
 
 .Dev extension example
 [col="a,a,a,a", options=headers]
