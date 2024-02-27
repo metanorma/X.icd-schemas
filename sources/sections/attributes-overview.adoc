@@ -3,13 +3,13 @@
 
 Attributes and the dictionary are the building blocks of a schema. This section discusses the schema attribute conventions, requirements, groupings, constraints, and some of the special attributes used in the core cybersecurity schema.
 
-In general, an attribute from the dictionary has the same meaning everywhere it is used in a schema. Some attributes can have a meaning that is overloaded depending on the event class context where they are used. In these cases the description of the attribute will be generic and include a ‘see specific usage’ instruction to override its description within the event class context rather than in the dictionary.
+In general, an attribute from the dictionary has the same meaning everywhere it is used in a schema. Some attributes can have a meaning that is overloaded depending on the event class context where they are used. In these cases the description of the attribute will be generic and include a ‘see specific usage' instruction to override its description within the event class context rather than in the dictionary.
 
 === Conventions
 
-The scheam adheres to naming conventions in order to more easily identify attributes with similar semantics. These conventions take the form of standard suffixes and prefixes. The standard suffixes are:
+The scheme adheres to naming conventions in order to more easily identify attributes with similar semantics. These conventions take the form of standard suffixes and prefixes. The standard suffixes are:
 
-`_id, _ids, _uid, _uuid, _ip, _name, _info, _detail, _time, _dt, _process, _ver`
+`_id`, `_ids`, `_uid`, `_uuid`, `_ip`, `_name`, `_info`, `_detail`, `_time`, `_dt`, `_process`, `_ver`
 
 ==== Arrays
 
@@ -37,7 +37,7 @@ If a source event has missing values that are required by the event class for th
 
 If a mapped event attribute does not have a defined enumeration value corresponding to a value of the event, Other is used which indicates that a sibling string attribute is populated with the custom attribute value. The sibling string attribute has the same name, minus the suffix. For example, activity_id and activity, or severity_id and severity.
 
-Sibling string attributes are optional, but if the enum value is Other (99) then the sibling string must be populated with the custom label (i.e. not “Other”).
+Sibling string attributes are optional, but if the enum value is Other (99) then the sibling string must be populated with the custom label (i.e. not "Other").
 
 For all defined enumeration integer values, including Unknown, the enum label text for the item may populate the sibling string attribute. That is, both the integer value and the string attribute are set. If the Enum attribute is required, then both the integer attribute and the sibling string attribute should be populated. Attribute requirements are discussed in a subsequent section.
 
@@ -61,7 +61,7 @@ Some event classes may specify constraints on recommended attributes.
 
 A Constraint is a documented rule subject to validation that requires at least one of the specified recommended attributes of a class to be populated. Constraints are used in classes where there are attributes that cannot be required in all use cases, but in order to have unambiguous meaning, at least one of the attributes in the constraint is required. Attributes in a constraint must be Recommended.
 
-The two constraints are: 
+The two constraints are:
 
 * at_least_one
 * just_one
@@ -77,7 +77,7 @@ Attributes are grouped for documentation purposes into:
 * Occurrence
 * Context groups
 
-Classification and Occurrence groupings are independent of event class and are defined with the attribute in the dictionary. Primary and Context attributes’ groupings are based on their usage within a given event class.
+Classification and Occurrence groupings are independent of event class and are defined with the attribute in the dictionary. Primary and Context attributes' groupings are based on their usage within a given event class.
 
 Each event class has primary attributes, the attributes that are indicative of the event semantics in all use cases. Primary attributes are typically Required, or Recommended per event class, based on their use in each class. Primary attributes in the Base Event class apply to all event classes.
 
@@ -128,9 +128,9 @@ Metadata is an object referenced by the required Base Event attribute metadata. 
 
 Metadata attributes such as modified_time and processed_time are optional. modified_time is populated when an event has been enriched or mutated in some way before analysis or storage. processed_time is populated typically when an event is collected and submitted to a logging system.8
 
-==== Version 
+==== Version
 
-The core schema version uses Semantic Versioning Specification (SemVer), e.g. 0.99.0, which indicates to consumers of the event which attributes may be found in the event, and what the class and category structure are. The convention is that the major version, after 1.0.0, or first part, remains the same while versions of the schema remain backwards compatible with previous versions of the schema and framework. As new classes, attributes, objects and profiles are added to the schema, the minor version, or second part of the version increases. The third part is reserved for corrections that don’t break the schema, for example documentation or caption changes.
+The core schema version uses Semantic Versioning Specification (SemVer), e.g. 0.99.0, which indicates to consumers of the event which attributes may be found in the event, and what the class and category structure are. The convention is that the major version, after 1.0.0, or first part, remains the same while versions of the schema remain backwards compatible with previous versions of the schema and framework. As new classes, attributes, objects and profiles are added to the schema, the minor version, or second part of the version increases. The third part is reserved for corrections that don't break the schema, for example documentation or caption changes.
 
 Extensions,discussed later, have their own versions and can change at their own pace but must remain compatible and consistent with the major version of the core schema that they extend. The optional extension attribute of type Schema Extension carries the version of an extension.
 
@@ -147,20 +147,24 @@ For complex (object type) attributes, Observable.name is the pointer or referenc
 [source, json]
 --
 "observables": [
-{ "name": "actor.process.name",
-"type": "Process Name",
-"type_id": 9,
-"value": "Notepad.exe"
-},
-{ "Name": "tls.ja3_hash",
-"Type": "Fingerprint",
-"Type_id": "30"
-},
-{ "name": "file.name",
-"type": "File Name",
-"type_id": 7,
-"value": "Notepad.exe"
-}]
+  {
+    "name": "actor.process.name",
+    "type": "Process Name",
+    "type_id": 9,
+    "value": "Notepad.exe"
+  },
+  {
+    "Name": "tls.ja3_hash",
+    "Type": "Fingerprint",
+    "Type_id": "30"
+  },
+  {
+    "name": "file.name",
+    "type": "File Name",
+    "type_id": 7,
+    "value": "Notepad.exe"
+  }
+]
 --
 
 === Enrichments
@@ -176,32 +180,37 @@ For example
 [source, json]
 --
 "metadata": {
-    "logged_time": 1659056959885810,
-    "modified_time": 1659056959885807,
-    "processed_time": 1659056959885796,
-    "sequence": 69,
-    "uid": "1310fc5c-0edb-11ed-88fc-0242ac110002",
-    "version": "1.0.0-RC3"
+  "logged_time": 1659056959885810,
+  "modified_time": 1659056959885807,
+  "processed_time": 1659056959885796,
+  "sequence": 69,
+  "uid": "1310fc5c-0edb-11ed-88fc-0242ac110002",
+  "version": "1.0.0-RC3"
 },
 "enrichments": [
-{
-"data": {"hash": 0c5ad1e8fe43583e279201cdb1046aea742bae59685e6da24e963a41df987494},
-"name": "ip",
-"provider": "provider.example.org",
-"type": "IP Address",
-"value": "103.216.221.19"
-},
-{
-"data": {"yara_rule": wellmail_unique_strings \{ meta: description = 
-"Rule for detection of WellMail based on unique strings contained in the binary" 
-author = "XXXX" hash = "0c5ad1e8fe43583e279201cdb1046aea742bae59685e6da24e963a41df987494" 
-strings: $a = "C:\\Server\\Mail\\App_Data\\Temp\\agent.sh\\src" 
-$b = "C:/Server/Mail/App_Data/Temp/agent.sh/src/main.go" $c = "HgQdbx4qRNv" 
-$d = "042a51567eea19d5aca71050b4535d33d2ed43ba" $e = "main.zipit" 
-$f = "@[^\\s]+?\\s(?P.*?)\\s" condition: uint32(0) == 0x464C457F and 3 of them \}"},
-"name": "ip",
-"provider": "provider.example.org",
-"type": "IP Address",
-"value": "103.216.221.19"
-}]
+  {
+    "data": {
+      "hash": 0c5ad1e8fe43583e279201cdb1046aea742bae59685e6da24e963a41df987494
+    },
+    "name": "ip",
+    "provider": "provider.example.org",
+    "type": "IP Address",
+    "value": "103.216.221.19"
+  },
+  {
+    "data": {
+      "yara_rule": "wellmail_unique_strings \{ meta: description =
+        "Rule for detection of WellMail based on unique strings contained in the binary"
+        author = "XXXX" hash = "0c5ad1e8fe43583e279201cdb1046aea742bae59685e6da24e963a41df987494"
+        strings: $a = "C:\\Server\\Mail\\App_Data\\Temp\\agent.sh\\src"
+        $b = "C:/Server/Mail/App_Data/Temp/agent.sh/src/main.go" $c = "HgQdbx4qRNv"
+        $d = "042a51567eea19d5aca71050b4535d33d2ed43ba" $e = "main.zipit"
+        $f = "@[^\\s]+?\\s(?P.*?)\\s" condition: uint32(0) == 0x464C457F and 3 of them \}"
+    },
+    "name": "ip",
+    "provider": "provider.example.org",
+    "type": "IP Address",
+    "value": "103.216.221.19"
+  }
+]
 --

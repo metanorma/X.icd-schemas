@@ -33,13 +33,13 @@ The raw_data optional attribute holds the event data as received from the source
 
 The type_uid required attribute is constructed by the combination of the event class of the event (class_uid)and its activity (activity_id). It is unique across the schema hence it has a _uid suffix. The type_uid friendly name, type_name, is a way of identifying the event in a more readable and complete way. It too is a combination of the names of the two component parts.
 
-The value is calculated as: class_uid * 100 + activity_id. 
+The value is calculated as: class_uid * 100 + activity_id.
 
 For example:
 
 type_uid = 3001 * 100 + 1 = 300101
 
-type_name = “Authentication: Logon”
+type_name = "Authentication: Logon"
 
 A snippet of a File Activity event example with random values is shown below9:
 
@@ -118,4 +118,4 @@ Attributes within an event class are sometimes associated with each other and in
 
 In this example from the Authentication class, the user as actor associates with its endpoint, the src_endpoint attribute of the class, while the target user associates with its endpoint, the dst_endpoint of the class. Note that the associations in this class are bi-directional, which is common, although uni-directional associations are also possible in other situations.
 
-The construct may be useful for automated processing systems where a lookup service is available for an attribute that isn’t or can’t be populated via the source event producer. In these cases the processor_time should be populated at the time of the association, as with other types of enrichments.
+The construct may be useful for automated processing systems where a lookup service is available for an attribute that isn't or can't be populated via the source event producer. In these cases the processor_time should be populated at the time of the association, as with other types of enrichments.

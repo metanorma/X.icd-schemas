@@ -5,7 +5,7 @@ Profiles are overlays on event classes and objects, effectively a dynamic mix-in
 
 Multiple profiles can be added to an event class via an array of profile values in the optional profiles attribute of the Base Event class. This mix-in approach allows for reuse of event classes vs. creating new classes one by one that include the same attributes. Event classes and instances of events that support the profile can be filtered via the profiles attribute across all categories and event classes, forming another dimension of classification.
 
-For example, a Security Controls profile that adds MITRE ATT&CKTM Attack and Malware objects to System Activity classes avoids having to recreate a new event class, or many classes, with all of the same attributes as the System Activity classes. A query for events of the class will return all the events, with or without the security information, while a query for just the profile will return events across all event classes that support the Malware profile. A Host profile can add Device, and Actor objects to Network Activity event classes when the network activity log source is a user’s computer. Note that the Actor object includes Process and User objects, so a Host profile can include all of these when applied. A Cloud profile could mix-in cloud platform specific information onto Network Activity events.
+For example, a Security Controls profile that adds MITRE ATT&CKTM Attack and Malware objects to System Activity classes avoids having to recreate a new event class, or many classes, with all of the same attributes as the System Activity classes. A query for events of the class will return all the events, with or without the security information, while a query for just the profile will return events across all event classes that support the Malware profile. A Host profile can add Device, and Actor objects to Network Activity event classes when the network activity log source is a user's computer. Note that the Actor object includes Process and User objects, so a Host profile can include all of these when applied. A Cloud profile could mix-in cloud platform specific information onto Network Activity events.
 
 The profiles attribute is an optional array attribute of the Base Event class. The absence of the profiles attribute means no profile attributes are added as would be expected. Attributes defined with a profile have requirements that cannot be overridden, since profiles are themselves optional; it is assumed that the application of a profile is because those attributes are desired and can be populated.
 
@@ -19,7 +19,7 @@ Core schema profiles for Security Control, Host, Cloud, Container and Linux (for
 | Security Control             | Host   | Cloud | Container     | Linux
 | attacks                      | actor  | api   | container     | group
 | disposition_id / disposition | device | cloud | namespace_pid | euid
-| malware                      |        |       |               | egid 
+| malware                      |        |       |               | egid
 |                              |        |       |               | auid
 |===
 
@@ -29,10 +29,10 @@ Other profiles could be product oriented, such as Firewall, IDS, VA, DLP etc. if
 
 The core schema comes with a Linux profile via the Linux platform extension.
 
-Vendors can add profiles via extensions. For example, Splunk Technical Add-ons might define a profile that could be added to all events with Splunk’s standard source, sourcetype, host attributes.
+Vendors can add profiles via extensions. For example, Splunk Technical Add-ons might define a profile that could be added to all events with Splunk's standard source, sourcetype, host attributes.
 
 === Disposition
-The disposition_id attribute of the Security Control profile indicates the outcome or state of the event class’ activity at the time of event capture and is an Enum with a standard set of values, such as Blocked, Quarantined, Deleted, Delayed.
+The disposition_id attribute of the Security Control profile indicates the outcome or state of the event class' activity at the time of event capture and is an Enum with a standard set of values, such as Blocked, Quarantined, Deleted, Delayed.
 
 Only event classes that register for the profile may have a disposition_id but all have an activity_id. A typical use of disposition_id is when a security protection product detects a threat and blocks it. The activity might have been a file open, but if the file was infected, the disposition would be that the file open was blocked. As of this writing, disposition_id is added to core schema classes only via the Security Controls profile.
 
@@ -46,7 +46,7 @@ The event classes would all include the Host profile and may include the Securit
 The event classes may include the Host profile and may include the Security Controls or Cloud profile.
 
 ==== Identity & Access Management
-The event classes would include the Host profile, (due to actor.user), **may **include the Cloud profile, and would not include the Security Control profile.
+The event classes would include the Host profile, (due to actor.user), **may** include the Cloud profile, and would not include the Security Control profile.
 
 === Personas and Profiles
 The personas called out in an earlier section, producer, author, mapper, analyst, all can consider the profile from a different perspective.
