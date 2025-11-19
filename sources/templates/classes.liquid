@@ -1,0 +1,67 @@
+
+== Classes
+
+{% assign classes = context.classes %}
+
+{% for class in classes %}
+
+{% assign class_name = class[0] %}
+{% assign class_description = class[1].description %}
+{% assign attributes = class[1].properties %}
+{% assign required_attributes = class[1].required %}
+{% assign class_deprecated = class[1].deprecated %}
+{% assign class_deprecated_info = class[1].deprecationInfo %}
+
+=== {{ class_name }} (Class {{ class_name }})
+
+{% if class_deprecated %}
+⚠️ __Deprecated since {{ class_deprecated_info.since }}__: {{ class_deprecated_info.message }}
+{% endif %}
+
+{{ class_description }}
+
+==== Attributes
+
+[cols="5",options="header,unnumbered"]
+|===
+| Name | Type | Requirement | Profile | Description
+
+{% for attr in attributes %}
+{% assign attr_name = attr[0] %}
+{% assign attr_type = attr[1]["$ref"] %}
+{% assign attr_description = attr[1].description %}
+{% assign attr_profile = attr[1].profile %}
+{% assign attr_deprecated = attr[1].deprecated %}
+{% assign attr_deprecated_info = attr[1].deprecationInfo %}
+
+| {%- if attr_deprecated %}⚠️{% endif -%}{{ attr_name }}
+|
+{%- if attr_type %}
+{% assign arr = attr_type | split: "/" %}
+<<{{ arr[1] }}-{{ arr | last }},{{ arr | last }}>>
+{% elsif attr[1].allOf %}
+{% assign arr = attr[1].allOf[0]["$ref"] | split: "/" %}
+<<{{ arr[1] }}-{{ arr | last }},{{ arr | last }}>>
+{% elsif attr[1].items["$ref"] %}
+{% assign arr = attr[1].items["$ref"] | split: "/" %}
+<<{{ arr[1] }}-{{ arr | last }},{{ arr | last }}>>
+{% endif %}
+|
+{% if required_attributes %}
+{% if required_attributes contains attr_name %}
+Required
+{% else %}
+Optional
+{% endif %}
+{% endif %}
+| {{ attr_profile }}
+| {{ attr_description }}
+{%- if attr_deprecated %}
+**Deprecated since {{ attr_deprecated_info.since }}: {{ attr_deprecated_info.message }}**
+{% endif %}
+
+{% endfor %}
+
+|===
+
+{% endfor %}
