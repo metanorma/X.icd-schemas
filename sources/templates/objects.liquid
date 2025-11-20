@@ -20,45 +20,44 @@
 | Name | Type | Requirement | Profile | Descriptions
 
 {% for attr in obj_attributes %}
-{% assign attr_name = attr[0] %}
-{% assign attr_type = attr[1]["$ref"] %}
-{% assign attr_items = attr[1].items["$ref"] %}
-{% assign attr_description = attr[1].description %}
-{% assign attr_profile = attr[1].profile %}
-{% assign attr_deprecated = attr[1].deprecated %}
-{% assign attr_deprecated_info = attr[1].deprecationInfo %}
+
+{%- assign attr_name = attr[0] -%}
+{%- assign attr_type = attr[1]["$ref"] -%}
+{%- assign attr_items = attr[1].items["$ref"] -%}
+{%- assign attr_description = attr[1].description -%}
+{%- assign attr_profile = attr[1].profile -%}
+{%- assign attr_deprecated = attr[1].deprecated -%}
+{%- assign attr_deprecated_info = attr[1].deprecationInfo -%}
 
 | [[objects-{{obj_name}}-{{attr_name}}]]{% if attr_deprecated %}⚠️{% endif -%}
 {{ attr_name }}
-
-| {% if attr_items %}
-{% assign arr = attr_items | split: "/" %}
+| {% if attr_items -%}
+{%- assign arr = attr_items | split: "/" -%}
 array[<<{{ arr[1] }}-{{ arr | last }},{{ arr | last }}>>]
 {% elsif attr_type != "" and attr_type != nil %}
-{% assign arr = attr_type | split: "/" %}
+{%- assign arr = attr_type | split: "/" -%}
 <<{{ arr[1] }}-{{ arr | last }},{{ arr | last }}>>
 {% elsif attr[1].allOf %}
-{% assign arr = attr[1].allOf[0]["$ref"] | split: "/" %}
+{%- assign arr = attr[1].allOf[0]["$ref"] | split: "/" -%}
 <<{{ arr[1] }}-{{ arr | last }},{{ arr | last }}>>
-{% endif %}
+{% endif -%}
 
-|
-{% if obj_required_attributes %}
-{% if obj_required_attributes contains attr_name %}
+| {% if obj_required_attributes -%}
+{%- if obj_required_attributes contains attr_name -%}
 Required
-{% else %}
+{%- else -%}
 Optional
-{% endif %}
-{% else %}
+{%- endif -%}
+{%- else -%}
 Optional
-{% endif %}
+{% endif -%}
 
 | {{ attr_profile }}
 | {{ attr_description | replace: "</code>", " </code>" }}
 {% if attr_deprecated -%}
 **Deprecated since {{ attr_deprecated_info.since }}: {{ attr_deprecated_info.message }}**
 {% endif %}
-{% endfor %}
+{% endfor -%}
 
 |===
 

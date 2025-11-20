@@ -11,16 +11,15 @@
 
 {% for type in type_defs%}
 
-{% assign def_name = type[0] %}
-{% assign base_type = type[1].type %}
-{% assign type_description = type[1].description %}
-{% assign pattern = type[1].pattern %}
+{%- assign def_name = type[0] -%}
+{%- assign base_type = type[1].type -%}
+{%- assign type_description = type[1].description -%}
+{%- assign pattern = type[1].pattern -%}
 
 | [[types-{{def_name}}]]{{ def_name }}
 | {{ base_type }}
 | {{ type_description | replace: "</code>", " </code>" }}
-
-| `++{{ pattern | replace: "|", "\|" }}++`
+| {% if pattern -%}`++{{ pattern | replace: "|", "\|" }}++`{%- endif %}
 
 {% endfor %}
 
