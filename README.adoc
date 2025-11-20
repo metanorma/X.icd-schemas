@@ -1,4 +1,4 @@
-= ITU-T X.icd-schemas
+= ITU-T X.ocsf
 
 This work item belongs to ITU-T SG 17.
 
@@ -6,14 +6,14 @@ This work item belongs to ITU-T SG 17.
 
 This document is available in its rendered forms here:
 
-* https://openitu.github.io/X.icd-schemas/[X.icd-schemas: Vendor agnostic Security Data Schemas for Integrated Cyber Defense Solutions]
+* https://openitu.github.io/X.icd-schemas/[X.ocsf: Vendor agnostic Security Data Schemas for Integrated Cyber Defense Solutions]
 
 
 == General
 
 This repository contains the document:
 
-* X.icd-schemas Vendor agnostic Security Data Schemas for Integrated Cyber Defense Solutions
+* X.ocsf Vendor agnostic Security Data Schemas for Integrated Cyber Defense Solutions
 
 == Structure
 

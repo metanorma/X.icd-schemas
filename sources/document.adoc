@@ -1,10 +1,10 @@
-= Open Cybersecurity Schema Framework (OCSF) – A vendor agnostic Security Data Schemas for Integrated Cyber Defense Solutions
+= Open Cybersecurity Schema Framework (OCSF) -- A vendor agnostic Security Data Schemas for Integrated Cyber Defense Solutions
 :docnumber: SG17-TDXXX
 :intended-type: R
 :doctype: recommendation
 :published-date: 2025-11-20
 :copyright-year: 2025
-:provisional-name: X.icd-schemas
+:provisional-name: X.ocsf
 :bureau: T
 :status: draft
 :group: 17

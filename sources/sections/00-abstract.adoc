@@ -2,7 +2,7 @@
 [abstract]
 == Abstract
 
-// This document is the 4th revised baseline text for X.icd-schemas:
+// This document is the 4th revised baseline text for X.ocsf:
 // Vendor agnostic Security Data Schemas for Integrated Cyber Defense
 // Solutions
 

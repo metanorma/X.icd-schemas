@@ -4,7 +4,7 @@
 :doctype: recommendation
 :published-date: 2023-11-03
 :copyright-year: 2024
-:provisional-name: X.icd-schemas
+:provisional-name: X.ocsf
 :bureau: T
 :status: draft
 :group: 17
