@@ -1,5 +1,5 @@
 
-== Classes
+=== Classes
 
 {% assign classes = context.classes %}
 
@@ -12,7 +12,7 @@
 {% assign class_deprecated = class[1].deprecated %}
 {% assign class_deprecated_info = class[1].deprecationInfo %}
 
-=== {{ class_name }} (Class {{ class_name }})
+==== {{ class_name }} (Class {{ class_name }})
 
 {% if class_deprecated %}
 ⚠️ __Deprecated since {{ class_deprecated_info.since }}__: {{ class_deprecated_info.message }}
@@ -20,7 +20,7 @@
 
 {{ class_description }}
 
-==== Attributes
+===== Attributes
 
 [cols="5",options="header,unnumbered"]
 |===
@@ -55,7 +55,7 @@ Optional
 {%- endif -%}
 {%- endif %}
 | {{ attr_profile }}
-| {{ attr_description }}
+| {{ attr_description | html2adoc }}
 {%- if attr_deprecated %}
 **Deprecated since {{ attr_deprecated_info.since }}: {{ attr_deprecated_info.message }}**
 {% endif %}

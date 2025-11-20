@@ -1,4 +1,4 @@
-== Objects
+=== Objects
 
 {% assign objects = context.objects["$defs"] %}
 
@@ -9,11 +9,11 @@
 {% assign obj_required_attributes = obj[1].required %}
 
 [[objects-{{obj_name}}]]
-=== {{obj_name}}
+==== {{obj_name}}
 
 {{obj_description}}
 
-==== Attributes
+===== Attributes
 
 [cols="5",options="header,unnumbered"]
 |===
@@ -53,7 +53,7 @@ Optional
 {% endif -%}
 
 | {{ attr_profile }}
-| {{ attr_description | replace: "</code>", " </code>" }}
+| {{ attr_description | html2adoc}}
 {% if attr_deprecated -%}
 **Deprecated since {{ attr_deprecated_info.since }}: {{ attr_deprecated_info.message }}**
 {% endif %}

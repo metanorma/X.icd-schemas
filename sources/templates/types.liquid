@@ -1,9 +1,9 @@
 
-== Types
+=== Types
 
 {% assign type_defs = context.types["$defs"] %}
 
-=== Type definitions
+==== Type definitions
 
 [cols="4",options="header,unnumbered"]
 |===
@@ -18,7 +18,7 @@
 
 | [[types-{{def_name}}]]{{ def_name }}
 | {{ base_type }}
-| {{ type_description | replace: "</code>", " </code>" }}
+| {{ type_description | html2adoc }}
 | {% if pattern -%}`++{{ pattern | replace: "|", "\|" }}++`{%- endif %}
 
 {% endfor %}
