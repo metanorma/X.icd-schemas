@@ -1,4 +1,4 @@
-= Vendor agnostic Security Data Schemas for Integrated Cyber Defense Solutions
+= Open Cybersecurity Schema Framework (OCSF) – A vendor agnostic Security Data Schemas for Integrated Cyber Defense Solutions
 :docnumber: SG17-TD990
 :intended-type: R
 :doctype: recommendation
