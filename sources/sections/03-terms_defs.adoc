@@ -4,29 +4,29 @@
 === Terms defined elsewhere
 
 // ==== Categories
-// 
+//
 // EDITOR: hope to find a good definition for this term elsewhere
-// 
+//
 // ==== Email
-// 
+//
 // EDITOR: find a normative reference for an IETF RFC822 email, might be a higher number now
-// 
+//
 // ==== Epoch
-// 
+//
 // EDITOR: we hope this is defined somewhere as 01/01/1970 00:00:00 UTC
-// 
+//
 // ==== Directory
-// 
+//
 // EDITOR: find a normative reference from X.500 and LDAP.
-// 
+//
 // ==== Policy
-// 
+//
 // EDITOR: find a normative reference for a policy e.g. in X.800.
-// 
+//
 // ==== URL
-// 
+//
 // EDITOR: find a normative reference perhaps in W3C?
-// 
+//
 
 === Terms defined in this Recommendation
 
