@@ -2,8 +2,9 @@
 metanorma:
   source:
     files:
-      - sources/document.adoc
+      # - sources/document.adoc
+      - sources/contribution/collection.yml
 
   collection:
-    name: "ITU-T SG 17 Q 15: X.icd-schemas"
+    name: "ITU-T SG 17 Q 4: X.ocsf-schemas"
     organization: ITU-T

@@ -1,13 +1,11 @@
 === Profiles
 
-[json2text,sections/profiles.json,data]
+[data2text,data=sections/profiles.json]
 ----
 {% for path in data.paths %}
+{% assign profile = path | prepend: "sources/" | loadfile: "." %}
 
-[json2text,{{ path }},profile]
---
-include::../profiles.liquid[]
---
+{% render "profile", profile: profile %}
 
 {% endfor %}
 ----

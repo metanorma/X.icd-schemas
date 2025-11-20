@@ -1,0 +1,30 @@
+==== {{ extension.caption }}
+
+{% if extension.uid %}
+UID:: {{ extension.uid }}
+{% endif %}
+
+{% if extension.name %}
+Technical name:: `{{ extension.name }}`
+{% endif %}
+
+{% if extension.version %}
+Version:: {{ extension.version }}
+{% endif %}
+
+{% if extension.extends %}
+Extends:: `{{ extension.extends }}`
+{% endif %}
+
+{% if extension.profiles %}
+Profiles::
+{% for profile in extension.profiles %}
+** {{ profile }}
+{% endfor %}
+{% endif %}
+
+Description:: {{ extension.description | strip_html }}
+
+{% if extension.attributes %}
+{% render "extension_attributes", attrs: extension.attributes, depth: 4 %}
+{% endif %}

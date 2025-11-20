@@ -1,0 +1,11 @@
+=== Extensions
+
+[data2text,data=sections/extensions.json]
+----
+{% for path in data.paths %}
+{% assign extension = path | prepend: "sources/" | loadfile: "." %}
+
+{% render "extension", extension: extension %}
+
+{% endfor %}
+----
