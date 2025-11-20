@@ -27,6 +27,7 @@
 | Name | Type | Requirement | Profile | Description
 
 {% for attr in attributes %}
+
 {% assign attr_name = attr[0] %}
 {% assign attr_type = attr[1]["$ref"] %}
 {% assign attr_description = attr[1].description %}
@@ -34,26 +35,25 @@
 {% assign attr_deprecated = attr[1].deprecated %}
 {% assign attr_deprecated_info = attr[1].deprecationInfo %}
 
-| {%- if attr_deprecated %}⚠️{% endif -%}{{ attr_name }}
-|
-{%- if attr_type %}
-{% assign arr = attr_type | split: "/" %}
+| {% if attr_deprecated -%}⚠️{%- endif %}
+{%- if attr_name == "_size" -%}size{%- else -%}{{ attr_name }}{%- endif %}
+| {% if attr_type -%}
+{%- assign arr = attr_type | split: "/" -%}
 <<{{ arr[1] }}-{{ arr | last }},{{ arr | last }}>>
-{% elsif attr[1].allOf %}
-{% assign arr = attr[1].allOf[0]["$ref"] | split: "/" %}
+{%- elsif attr[1].allOf -%}
+{%- assign arr = attr[1].allOf[0]["$ref"] | split: "/" -%}
 <<{{ arr[1] }}-{{ arr | last }},{{ arr | last }}>>
-{% elsif attr[1].items["$ref"] %}
-{% assign arr = attr[1].items["$ref"] | split: "/" %}
+{%- elsif attr[1].items["$ref"] -%}
+{%- assign arr = attr[1].items["$ref"] | split: "/" -%}
 <<{{ arr[1] }}-{{ arr | last }},{{ arr | last }}>>
-{% endif %}
-|
-{% if required_attributes %}
-{% if required_attributes contains attr_name %}
+{%- endif %}
+| {% if required_attributes -%}
+{%- if required_attributes contains attr_name -%}
 Required
-{% else %}
+{%- else -%}
 Optional
-{% endif %}
-{% endif %}
+{%- endif -%}
+{%- endif %}
 | {{ attr_profile }}
 | {{ attr_description }}
 {%- if attr_deprecated %}
