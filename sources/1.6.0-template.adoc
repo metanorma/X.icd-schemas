@@ -36,7 +36,7 @@
 
 include::templates/overview.liquid[]
 
-// include::templates/classes.liquid[]
+include::templates/classes.liquid[]
 
 include::templates/objects.liquid[]
 
