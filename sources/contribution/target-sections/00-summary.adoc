@@ -1,0 +1,14 @@
+
+[abstract]
+== Summary
+// <Mandatory>
+
+The summary goes here.
+
+////
+== Introduction
+
+Optional. This clause should appear only if it contains information
+different from that in Scope and Summary.
+
+////

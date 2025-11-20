@@ -1,0 +1,6 @@
+
+[[appendixI]]
+[appendix,obligation=informative]
+== Example of appendix
+
+_[ADD TEXT, IF ANY]_.

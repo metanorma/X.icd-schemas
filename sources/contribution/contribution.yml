@@ -1,0 +1,14 @@
+---
+metanorma:
+  source:
+    files:
+      # Prerequisites of the collection
+      - document.adoc
+      - target.adoc
+
+      # The collection
+      - collection.yml
+
+  collection:
+    organization: "ITU"
+    name: "Contribution Revision XXX"

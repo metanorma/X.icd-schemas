@@ -1,0 +1,6 @@
+
+[[annexA]]
+[appendix,obligation=normative]
+== Annex Title
+
+Body of Annex A.

@@ -1,0 +1,11 @@
+
+== Scope
+//<Mandatory>
+
+This Recommendation provides a set of common, coherent and portable signal processing tools to facilitate the development of speech and audio coding algorithms, in particular within the standardization environment, where the following situations often happen:
+
+- experimental results generated with different software tools may not be directly compared;
+- software tools used by different organizations may not perfectly conform to related ITU T Recommendations, which may delay ITU-T standardization processes;
+- ITU-T Recommendations may leave scope for different implementations;
+- new speech and audio coding standards are increasing in complexity, leading to non bitexact specifications; furthermore, appropriate testing procedures to assure interoperability of different implementations are needed.
+

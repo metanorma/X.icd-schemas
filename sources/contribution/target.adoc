@@ -1,0 +1,56 @@
+= Template for an ITU Recommendation or other document, which is the subject matter of a Revision Contribution
+:comment: ### Bureau that the documents belongs to; mandatory. Permitted types: T (ITU-T), R (ITU-R), D (ITU-D)
+:bureau: T
+:comment: ### Internal reference number; mandatory
+:docnumber: W.3000 (fictitious)
+:comment: ### Series that the recommendation belongs to; mandatory. Use full title, for example:
+:series: W: Authoring templates
+:comment: ### First level subseries; mandatory
+:series1: Recommendations
+:comment: ### Second level subseries; mandatory
+:series2: Metanorma template
+:comment: ### Date on which the standard was updated; mandatory
+:published-date: 2050-02-28
+:comment: ### Document status/stage; mandatory. Synonym: docstage. Visit: https://www.metanorma.com/author/itu/authoring/ for permitted types
+:status: draft
+:comment: ### Document type; mandatory. Visit: https://www.metanorma.com/author/itu/authoring/ for permitted types
+:doctype: recommendation
+:comment: ### Comma delimited keywords; mandatory
+:keywords: authoring, recommendation, template, metanorma
+:comment: ### Directory name used as prefix for the location of image files; optional
+:imagesdir: images
+:comment: ### Metanorma flavor; mandatory
+:mn-document-class: itu
+:comment: ### Desired output formats; mandatory
+:mn-output-extensions: xml,html,doc,pdf,rxl
+:comment: ### Enable local relaton cache for quick inclusion of prefetched references; optional. For further information, visit: https://www.metanorma.com/author/ref/document-attributes/#caches, https://www.metanorma.com/author/topics/building/reference-lookup/#lookup-result-caching
+:local-cache-only:
+:comment: ### Encode all images in HTML output as inline data-URIs; optional
+:data-uri-image:
+
+// NOTE TO AUTHORS: Replace the text between angle brackets (< and >), including the brackets, with the appropriate text. Also delete this Note.
+// Converted from ITUT-Recs-Skelet.doc
+
+// NOTE: This is a template for a Recommendation, but a Revision Contribution can target any type of ITU document.
+// To populate this template, refer to the templates for standalone document
+
+include::target-sections/00-summary.adoc[]
+
+include::target-sections/01-scope.adoc[]
+
+include::target-sections/02-norm-refs.adoc[]
+
+include::target-sections/03-terms.adoc[]
+
+include::target-sections/04-abbrev.adoc[]
+
+include::target-sections/05-conventions.adoc[]
+
+include::target-sections/06-content.adoc[]
+
+include::target-sections/a1-annex.adoc[]
+
+include::target-sections/a2-appendix.adoc[]
+
+include::target-sections/zz-references.adoc[]
+

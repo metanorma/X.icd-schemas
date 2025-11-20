@@ -1,0 +1,44 @@
+
+== Definitions
+
+////
+Check in the ITU-T terms and definitions database at
+www.itu.int/go/terminology-database whether the term has already been
+defined in another Recommendation. It would be more consistent to refer
+to such a definition rather than to redefine the term.
+////
+
+=== Terms defined elsewhere
+
+////
+Normally, terms defined elsewhere will simply refer to the defining
+document. In certain cases, it may be desirable to quote the definition
+to allow for a stand-alone document
+////
+
+==== playlist
+
+Composed of a list of contents.
+
+NOTE: This data is created and provided by digital service providers.
+
+[.source]
+<<h780>>
+
+==== metadata
+
+Structured information that pertains to the identity of users, systems, services, processes, resources, information or other entities.
+
+[.source]
+<<x1255>>
+
+
+=== Terms defined in this Recommendation
+
+==== region
+
+A partial area of the screen layout to be a content displayed.
+
+==== screen layout
+
+A composition of one or moreregions to be content displayed.

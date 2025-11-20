@@ -1,0 +1,14 @@
+
+== Abbreviations and acronyms
+////
+<Include all abbreviations and acronyms used in this Recommendation>
+////
+
+// This Recommendation uses the following abbreviations and acronyms:
+
+DS:: Digital Signage
+
+GML:: Geography Markup Language
+
+URI:: Uniform Resource Identifier
+

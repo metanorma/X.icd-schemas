@@ -1,0 +1,47 @@
+
+[[annexA]]
+[appendix,obligation=normative,type=justification]
+== {blank}
+
+// Base text: indicates where in this document the proposed document text is. The following is the default value reflecting 
+// how this template has been set up.
+[type=basetext]
+=== {blank}
+
+Annex B of this Contribution
+
+
+// *Scope* (defines the intent or object of the {{ doctype }} and the aspects covered, thereby indicating the limits of its applicability):
+[type=scope]
+=== {blank}
+
+text
+
+// *Summary* (provides a brief overview of the purpose and contents of the {{ doctype }}, thus permitting readers to judge its usefulness for their work):
+[type=summary]
+=== {blank}
+
+text
+
+// *Relations to ITU-T Recommendations or to other standards* (approved or under development):
+[type=relatedstandards]
+=== {blank}
+
+. text
+. text
+. text
+
+// *Liaisons with other study groups or with other standards bodies:*
+[type=liaisons]
+=== {blank}
+
+. text
+. text
+. text
+
+// *Supporting members that are committing to contributing actively to the work item:*
+[type=supportingmembers]
+=== {blank}
+
+text
+

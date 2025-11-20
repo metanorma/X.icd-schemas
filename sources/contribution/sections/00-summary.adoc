@@ -1,0 +1,8 @@
+
+[abstract]
+== Abstract
+
+// This abstract will automatically be inserted into a table formatted as in the normal contribution template.
+
+This Contribution contains a revised baseline text and work program changes for X.icd-schemas: Vendor agnostic Security Data Schemas for Integrated Cyber Defense Solutions
+

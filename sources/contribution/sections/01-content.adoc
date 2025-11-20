@@ -1,0 +1,9 @@
+
+[[specific_contents]]
+== Editors notes
+
+As OCSF is maturing and key leaders now joined the effort at SG17, the community reviewed the status of this work item and agreed to propose the following key changes:
+
+* Instead of following the schema in a linear manner from the perspective of the designers of OCSF, it was agreed to reverse completely this draft Recommendation and make it from the perspective of the consumer of this Recommendation 
+* This change should significantly improve the readability of the document and simply it.
+* The other changes are that the community agreed that OCSF should appear in the title and the work item should be changed to X.ocsf for simplicity and better recognition. Indeed some members nearly missed that both projects were linked and it would have created a quite dramatic outcome

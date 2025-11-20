@@ -1,0 +1,14 @@
+
+[bibliography]
+== References
+
+// References below are set to be fetched automatically
+// To verify the reference lookup syntax for all the supported flavors,
+// visit: https://www.metanorma.com/author/topics/building/reference-lookup/#reference-lookup-syntax
+* [[[h780,ITU-T H.780]]]
+
+* [[[p56,ITU-T P.56]]]
+
+* [[[iso3166,ISO 3166-1]]]
+
+* [[[xmlschema, W3C XMLSchema]]] W3C Recommendation (2004), _XML Schema Part 2: Datatypes Second Edition_.
