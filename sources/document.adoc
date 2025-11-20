@@ -47,7 +47,7 @@ include::sections/taxonomies.adoc[]
 
 include::sections/attributes-overview.adoc[]
 
-include::sections/dictionary.adoc[]
+// include::sections/dictionary.adoc[]
 
 // include::sections/objects.adoc[]
 
