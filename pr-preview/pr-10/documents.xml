@@ -1,5 +1,5 @@
-<relaton-collection xmlns="https://open.ribose.com/relaton-xml"><title>ITU-T SG 17 Q 15: X.icd-schemas</title><contributor><role type='author'/><organization><name>ITU-t</name></organization></contributor><relation type='partOf'><bibdata type="standard" schema-version="v1.2.9">
-  <title type="main" language="en">Vendor agnostic Security Data Schemas for Integrated Cyber Defense Solutions</title>
+<relaton-collection xmlns="https://open.ribose.com/relaton-xml"><title>ITU-T SG 17 Q 15: X.icd-schemas</title><contributor><role type='author'/><organization><name>ITU-t</name></organization></contributor><relation type='partOf'><bibdata type="standard" schema-version="v1.5.6">
+  <title language="en" type="main">Vendor agnostic Security Data Schemas for Integrated Cyber Defense Solutions</title>
   <uri type="xml">./documents/document.xml</uri>
   <uri type="pdf">./documents/document.pdf</uri>
   <uri type="doc">./documents/document.doc</uri>
@@ -7,6 +7,7 @@
   <uri type="rxl">./documents/document.rxl</uri>
   <docidentifier type="ITU" primary="true">ITU-T SG17-TD990</docidentifier>
   <docidentifier type="ITU-lang">ITU-T SG17-TD990-E</docidentifier>
+  <docidentifier type="ITU-lang-long">ITU-T SG17-TD990-E</docidentifier>
   <docidentifier type="ITU-provisional">X.icd-schemas</docidentifier>
   <docnumber>SG17-TD990</docnumber>
   <date type="published">
@@ -43,15 +44,15 @@
     </role>
     <organization>
       <name>International Telecommunication Union</name>
-      <subdivision>
-T
-</subdivision>
-      <subdivision>
-17
-</subdivision>
-      <subdivision>
-15
-</subdivision>
+      <subdivision type="Bureau">
+        <name>T</name>
+      </subdivision>
+      <subdivision type="Group" subtype="study-group">
+        <name>17</name>
+      </subdivision>
+      <subdivision type="Subgroup" subtype="question">
+        <name>15</name>
+      </subdivision>
       <abbreviation>ITU</abbreviation>
     </organization>
   </contributor>
@@ -64,7 +65,9 @@ T
   </contributor>
   <language>en</language>
   <script>Latn</script>
-  <abstract/>
+  <abstract>
+
+</abstract>
   <status>
     <stage>draft</stage>
   </status>
@@ -77,15 +80,19 @@ T
       </organization>
     </owner>
   </copyright>
-  <keyword>Data</keyword>
-  <keyword>schemas</keyword>
-  <keyword>security</keyword>
-  <ext schema-version="v1.0.0">
+  <keyword/>
+  <keyword/>
+  <keyword/>
+  <ext schema-version="v1.1.3">
     <doctype>recommendation</doctype>
+    <flavor>itu</flavor>
     <structuredidentifier>
       <bureau>T</bureau>
       <docnumber>SG17-TD990</docnumber>
     </structuredidentifier>
+    <ip-notice-received>false</ip-notice-received>
+    <intended-type>R</intended-type>
+    <source>editor</source>
   </ext>
 </bibdata></relation>
 </relaton-collection>
