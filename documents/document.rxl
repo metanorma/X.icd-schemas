@@ -1,0 +1,24 @@
+<bibdata type="standard">
+<title language="en" type="main">Vendor agnostic Security Data Schemas for Integrated Cyber Defense Solutions</title>
+<docidentifier type="ITU" primary="true">ITU-T SG17-TD990</docidentifier><docidentifier type="ITU-lang">ITU-T SG17-TD990-E</docidentifier><docidentifier type="ITU-lang-long">ITU-T SG17-TD990-E</docidentifier><docidentifier type="ITU-provisional">X.icd-schemas</docidentifier><docnumber>SG17-TD990</docnumber><date type="published"><on>2023-11-03</on></date><contributor><role type="author"/><organization>
+<name>International Telecommunication Union</name>
+<abbreviation>ITU</abbreviation></organization></contributor><contributor><role type="author"/><person>
+<name><completename>Arnaud Taddei</completename></name>
+<affiliation><organization>
+<name>Broadcom</name>
+<address><formattedAddress>USA</formattedAddress></address></organization></affiliation><phone>+41795061129</phone><email>Arnaud.Taddei@broadcom.com</email></person></contributor><contributor><role type="author"><description>committee</description></role><organization>
+<name>International Telecommunication Union</name>
+<subdivision type="Bureau">
+<name>T</name>
+</subdivision><subdivision type="Group" subtype="study-group">
+<name>17</name>
+</subdivision><subdivision type="Subgroup" subtype="question">
+<name>15</name>
+</subdivision><abbreviation>ITU</abbreviation></organization></contributor><contributor><role type="publisher"/><organization>
+<name>International Telecommunication Union</name>
+<abbreviation>ITU</abbreviation></organization></contributor><language>en</language><script>Latn</script><abstract>
+
+</abstract><status><stage>draft</stage></status><copyright><from>2024</from><owner><organization>
+<name>International Telecommunication Union</name>
+<abbreviation>ITU</abbreviation></organization></owner></copyright><keyword>Data</keyword><keyword>schemas</keyword><keyword>security</keyword><ext><doctype>recommendation</doctype><flavor>itu</flavor><structuredidentifier><bureau>T</bureau><docnumber>SG17-TD990</docnumber></structuredidentifier><ip-notice-received>false</ip-notice-received><studyperiod><start>2022</start><end>2024</end></studyperiod><intended-type>R</intended-type><source>editor</source>
+</ext></bibdata>
