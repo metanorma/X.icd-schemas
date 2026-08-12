@@ -1,0 +1,39 @@
+
+== Conventions
+////
+Mandatory clause. Describe any particular notation, style,
+presentation, etc. used within the Recommendation, if any.
+
+If none, write "None."
+////
+
+This Recommendation follows the notation described in clause 6 of <<h780>>. The notation is used in this Recommendation to facilitate the specification of the corresponding schema:
+
+* _Definition/Semantics_: definition and semantics of the element / attribute along with notes and value domain;
+
+* _Type_: describes the type of the pertaining instance as defined in <<table1>>.
+
+
+<<table1>> contains data types used in this Recommendation; alternative representations may be shown which illustrates other data structures. In case of discrepancy with any alternative representation, the correct information is to be found in <<table1>>.
+
+[[table1]]
+.Data types used in this Recommendation
+[cols="a,a,a",options="header"]
+|===
+^| Type
+^| Name
+^| Notes/Reference
+
+| `iso:countryCode`
+| Country Code
+| Used to specify country code. Defined in <<iso3166>>.
+
+| `gml:Point`
+| GML point
+| Used to specify simple point geometry in format of geography markup language (GML). A point consists of a `<Point>` element with a child `<coords>` element. Within `<coords>` the latitude and longitude values are separated by a space. Defined in <<iso19136>>.
+
+| `xs:anyURI`
+| URI
+| Used to specify uniform resource identifier (URI). Defined in <<xmlschema>>.
+
+|===

@@ -1,24 +1,29 @@
-= Vendor agnostic Security Data Schemas for Integrated Cyber Defense Solutions
-:docnumber: SG17-TD990
+= Open Cybersecurity Schema Framework (OCSF) -- A vendor agnostic Security Data Schemas for Integrated Cyber Defense Solutions
+:docnumber: SG17-TDXXX
 :intended-type: R
 :doctype: recommendation
-:published-date: 2023-11-03
-:copyright-year: 2024
-:provisional-name: X.icd-schemas
+:published-date: 2025-11-20
+:copyright-year: 2025
+:provisional-name: X.ocsf
 :bureau: T
 :status: draft
 :group: 17
 :grouptype: study-group
-:groupyearstart: 2022
-:groupyearend: 2024
-:subgroup: 15
+:groupyearstart: 2025
+:groupyearend: 2028
+:subgroup: 4
 :subgrouptype: question
 :source: editor
 :fullname: Arnaud Taddei
-:affiliation: Broadcom
-:address: USA
+:affiliation: Broadcom Europe Ltd.
+:address: United Kingdom
 :phone: +41795061129
 :email: Arnaud.Taddei@broadcom.com
+:fullname_2: Raj Panat
+:affiliation_2: AWS (Amazon)
+:address_2: United States
+:phone_2: +xx
+:email_2: rajaspa@amazon.com
 :language: en
 :keywords: security, data, schemas
 :imagesdir: images
@@ -47,9 +52,11 @@ include::sections/taxonomies.adoc[]
 
 include::sections/attributes-overview.adoc[]
 
-include::sections/dictionary.adoc[]
+// include::sections/dictionary.adoc[]
 
-include::sections/objects.adoc[]
+// include::sections/objects.adoc[]
+
+include::sections/ocsf_schema.adoc[]
 
 include::sections/events-overview.adoc[]
 
@@ -69,7 +76,7 @@ include::sections/extensions.adoc[]
 
 include::sections/appendix-guidelines.adoc[]
 
-include::sections/appendix-data-types.adoc[]
+// include::sections/appendix-data-types.adoc[]
 
 include::sections/appendix-schema-construction.adoc[]
 

@@ -33,4 +33,4 @@ Constraints::
 
 Description:: {{ object.description | strip_html }}
 
-{% include "event_attributes", attrs: object.attributes, depth: 4 %}
+{% render"event_attributes", attrs: object.attributes, depth: 4 %}

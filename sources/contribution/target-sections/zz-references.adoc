@@ -1,0 +1,11 @@
+
+[bibliography]
+== Bibliography
+
+* [[[x1255,ITU-T X.1255]]]
+
+* [[[iso8601-1,ISO 8601-1]]]
+
+* [[[iso19136,ISO 19136]]]
+
+* [[[rfc5646,IETF RFC 5646]]]

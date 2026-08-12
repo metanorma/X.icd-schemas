@@ -1,0 +1,25 @@
+{
+  "paths": [
+    "ocsf-schema/extensions/linux/dictionary.json",
+    "ocsf-schema/extensions/linux/extension.json",
+    "ocsf-schema/extensions/linux/objects/process.json",
+    "ocsf-schema/extensions/linux/profiles/linux_users.json",
+    "ocsf-schema/extensions/windows/dictionary.json",
+    "ocsf-schema/extensions/windows/events/prefetch_query.json",
+    "ocsf-schema/extensions/windows/events/registry_key_activity.json",
+    "ocsf-schema/extensions/windows/events/registry_key_query.json",
+    "ocsf-schema/extensions/windows/events/registry_value_activity.json",
+    "ocsf-schema/extensions/windows/events/registry_value_query.json",
+    "ocsf-schema/extensions/windows/events/windows_resource_activity.json",
+    "ocsf-schema/extensions/windows/events/windows_service_activity.json",
+    "ocsf-schema/extensions/windows/extension.json",
+    "ocsf-schema/extensions/windows/objects/evidences.json",
+    "ocsf-schema/extensions/windows/objects/process.json",
+    "ocsf-schema/extensions/windows/objects/query_evidence.json",
+    "ocsf-schema/extensions/windows/objects/registry_key.json",
+    "ocsf-schema/extensions/windows/objects/registry_value.json",
+    "ocsf-schema/extensions/windows/objects/startup_item.json",
+    "ocsf-schema/extensions/windows/objects/win_resource.json",
+    "ocsf-schema/extensions/windows/objects/win_service.json"
+  ]
+}

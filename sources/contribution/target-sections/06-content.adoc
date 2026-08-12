@@ -1,0 +1,19 @@
+
+[[content]]
+== Clause 6 of the Recommendation
+
+[[general]]
+=== General
+
+////
+Clause 6 onwards contains the body of the Recommendation
+////
+
+Here's where you place your main content.
+
+
+=== Data models
+
+The following data models are used by other data models specified in
+this document.
+

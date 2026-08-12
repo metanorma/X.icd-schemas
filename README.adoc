@@ -1,4 +1,4 @@
-= ITU-T X.icd-schemas
+= ITU-T X.ocsf
 
 This work item belongs to ITU-T SG 17.
 
@@ -6,14 +6,14 @@ This work item belongs to ITU-T SG 17.
 
 This document is available in its rendered forms here:
 
-* https://openitu.github.io/X.icd-schemas/[X.icd-schemas: Vendor agnostic Security Data Schemas for Integrated Cyber Defense Solutions]
+* https://openitu.github.io/X.icd-schemas/[X.ocsf: Vendor agnostic Security Data Schemas for Integrated Cyber Defense Solutions]
 
 
 == General
 
 This repository contains the document:
 
-* X.icd-schemas Vendor agnostic Security Data Schemas for Integrated Cyber Defense Solutions
+* X.ocsf Vendor agnostic Security Data Schemas for Integrated Cyber Defense Solutions
 
 == Structure
 
@@ -71,6 +71,77 @@ docker run \
 ----
 
 NOTE: See https://www.metanorma.org/install/docker/ for details.
+
+
+
+== Updating OCSF Schema references
+
+The repository includes a Ruby script to automatically update JSON configuration
+files that reference OCSF schema components.
+
+=== Purpose
+
+The `update_events_json.rb` script scans the OCSF schema submodule and generates
+JSON configuration files used by the documentation build process. It ensures all
+schema components are properly referenced in the documentation.
+
+=== When to use
+
+Run this script whenever:
+
+* The OCSF schema submodule is updated (e.g., after `git submodule update`)
+* New events, objects, profiles, or extensions are added to the schema
+* Files are moved or renamed in the OCSF schema
+
+=== Updated Files
+
+The script updates four JSON configuration files in `sources/sections/`:
+
+`events.json`::
+Lists all event class definitions from `sources/ocsf-schema/events/`
+
+`objects.json`::
+Lists all object definitions from `sources/ocsf-schema/objects/`
+
+`profiles.json`::
+Lists all profile definitions from `sources/ocsf-schema/profiles/`
+
+`extensions.json`::
+Lists all extension components from `sources/ocsf-schema/extensions/`
+
+=== Running the script
+
+[source,sh]
+----
+ruby update_events_json.rb
+----
+
+The script will:
+
+. Recursively scan each OCSF schema directory
+. Collect all JSON files (with appropriate filters)
+. Generate relative paths from the `sources/` directory
+. Update the corresponding JSON configuration files
+. Display a summary of files found and processed
+
+Example output:
+
+[source,console]
+----
+============================================================
+Updating OCSF Schema Configuration Files
+============================================================
+
+events.json:
+  Scanning: /path/to/sources/ocsf-schema/events
+  Found: 84 files
+  Updated: /path/to/sources/sections/events.json
+  ...
+
+============================================================
+Update complete!
+============================================================
+----
 
 
 == License

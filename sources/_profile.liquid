@@ -18,4 +18,4 @@ Annotations::
 
 Description:: {{ profile.description | strip_html }}
 
-{% include "event_attributes", attrs: profile.attributes, depth: 4 %}
+{% render"event_attributes", attrs: profile.attributes, depth: 4 %}

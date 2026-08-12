@@ -1,18 +1,15 @@
 
 === Objects in the ICD Schema
 
-[json2text,sections/objects.json,data]
+[data2text,data=sections/objects.json]
 ----
 {% for path in data.paths %}
+{% assign object = path | prepend: "sources/" | loadfile: "." %}
 
-[json2text,{{ path }},object]
---
-include::../object.liquid[]
---
+{% render "object", object: object %}
 
 {% endfor %}
 ----
-
 
 // [cols="a,a"]
 // |===

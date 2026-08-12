@@ -1,0 +1,75 @@
+= Revised baseline text and work program changes for X.icd-schemas: Vendor agnostic Security Data Schemas for Integrated Cyber Defense Solutions
+:comment: ### Bureau that the documents belongs to; mandatory. Permitted types: T (ITU-T), R (ITU-R), D (ITU-D)
+:bureau: T
+:comment: ### The Question that the report belongs under. If there are multiple Questions, they are comma-delimited, and Questions containing commas must be quoted. The Question should be prefixed with its identifier followed by colon.
+:question: Q4/17: Cybersecurity and countering spam
+:comment: ### The type of top-level editorial group that the report belongs under; by default study-group. Legal values include: tsag, study-group, focus-group, adhoc-group, correspondence-group, joint-coordination-activity, working-party, working-group, rapporteur-group, intersector-rapporteur-group, regional-group
+:group-type: study-group
+:comment: ### The Study Group (or similar) that the report belongs under, modelled as an editorial group
+:group: Study Group 17
+:comment: ### The standard acronym of the Study Group
+:group-acronym: SG 17
+:comment: ### Year that the group's study period started
+:group-year-start: 2024
+:comment: ### Year that the group's study period ended
+:group-year-end: 2026
+:comment: ### Name of the meeting
+:meeting: SG17 Meeting
+:comment: ### Date of the meeting, entered in YYYY-MM-DD or YYYY-MM-DD/YYYY-MM-DD
+:meeting-date: 2025-12-03/2025-12-11
+:comment: ### Place of the meeting
+:meeting-place: Geneva
+:comment: ### Language of document
+:language: en
+:comment: ### Source
+:source: Source
+:comment: ### Number of contribution document. The document identifier will use the docnumber as its numeric component; e.g. SG 17-C3000 needs just `3000` as the docnumber
+:docnumber: xxx
+:comment: ### Date on which the standard was updated; mandatory
+:published-date: 2025-11-20
+:comment: ### Document status/stage; mandatory. Synonym: docstage. Visit: https://www.metanorma.com/author/itu/authoring/ for permitted types
+:status: in-force-prepublished
+:comment: ### Document type; mandatory. Visit: https://www.metanorma.com/author/itu/authoring/ for permitted types
+:doctype: contribution
+:comment: ### Timeframe within which the proposed document is expected to be delivered.
+:timing: Q4-2025
+:comment: ### Process through which the proposed document will be approved.
+:approval-process: Agreement
+:comment: ### Comma delimited keywords; mandatory
+:keywords: authoring, technical-report
+:comment: ### First contact
+:fullname: Arnaud Taddei
+:comment: ### Company/Organization of first contact
+:affiliation: Broadcom Europe Ltd.
+:comment: ### Country of first contact
+:address: United Kingdom
+:comment: ### Phone of first contact
+:phone: +41795061129
+:comment: ### Email of first contact
+:email: Arnaud.Taddei@broadcom.com
+:comment: ### Details of second contact
+:fullname_2: Raj Panat
+:affiliation_2: AWS (Amazon)
+:address_2: United States
+:phone_2: +xx
+:email_2: rajaspa@amazon.com
+:comment: ### Directory name used as prefix for the location of image files; optional
+:imagesdir: images
+:comment: ### Metanorma flavor; mandatory
+:mn-document-class: itu
+:comment: ### Desired output formats; mandatory
+:mn-output-extensions: xml,html,doc,pdf,rxl
+:comment: ### Enable local relaton cache for quick inclusion of prefetched references; optional. For further information, visit: https://www.metanorma.com/author/ref/document-attributes/#caches, https://www.metanorma.com/author/topics/building/reference-lookup/#lookup-result-caching
+:local-cache-only:
+:comment: ### Encode all images in HTML output as inline data-URIs; optional
+:data-uri-image:
+
+
+include::sections/00-summary.adoc[]
+
+include::sections/01-content.adoc[]
+
+// include::sections/a1-annexA.adoc[]
+
+// include::sections/a1-appendix.adoc[]
+

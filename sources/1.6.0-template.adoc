@@ -1,0 +1,40 @@
+= OCSF Schema Reference Documentation
+:docnumber: SG17-TD990
+:intended-type: R
+:doctype: recommendation
+:published-date: 2023-11-03
+:copyright-year: 2024
+:provisional-name: X.ocsf
+:bureau: T
+:status: draft
+:group: 17
+:grouptype: study-group
+:groupyearstart: 2022
+:groupyearend: 2024
+:subgroup: 15
+:subgrouptype: question
+:source: editor
+:fullname: Arnaud Taddei
+:affiliation: Broadcom
+:address: USA
+:phone: +41795061129
+:email: Arnaud.Taddei@broadcom.com
+:language: en
+:keywords: security, data, schemas
+:imagesdir: images
+:mn-document-class: itu
+:mn-output-extensions: html
+:local-cache-only:
+:data-uri-image:
+
+
+[data2text,context=data/1.6.0.json]
+----
+include::templates/overview.liquid[]
+
+include::templates/classes.liquid[]
+
+include::templates/objects.liquid[]
+
+include::templates/types.liquid[]
+----

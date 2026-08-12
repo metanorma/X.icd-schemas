@@ -1,14 +1,12 @@
 
 === Events in the ICD Schema
 
-[json2text,sections/events.json,data]
+[data2text,data=sections/events.json]
 ----
 {% for path in data.paths %}
+{% assign event = path | prepend: "sources/" | loadfile: "." %}
 
-[json2text,{{ path }},event]
---
-include::../event.liquid[]
---
+{% render "event", event: event %}
 
 {% endfor %}
 ----

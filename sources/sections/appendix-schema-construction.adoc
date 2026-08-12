@@ -2,6 +2,8 @@
 
 == Schema Construction and Extension
 
+=== OCSF schema repository
+
 The OCSF schema repository can be found at https://github.com/ocsf/ocsf-schema.
 
 The repository is structured as follows:
@@ -23,7 +25,8 @@ The repository is structured as follows:
 
 For information and examples about how to add to the schema, see CONTRIBUTING.md in the OCSF GitHub.
 
-Extending the Schema
+=== Extending the Schema
+
 To extend the schema create a new directory using a unique extension name (e.g. dev) in the extensions directory. The directory structure is the same as the top level repository structure above, and it may contain the following files and subdirectories, depending on what type of extension is desired:
 
 .Repository structure

@@ -1,0 +1,13 @@
+
+== OCSF Schema
+
+[data2text,context=data/1.6.0.json]
+----
+include::../templates/overview.liquid[]
+
+include::../templates/classes.liquid[]
+
+include::../templates/objects.liquid[]
+
+include::../templates/types.liquid[]
+----

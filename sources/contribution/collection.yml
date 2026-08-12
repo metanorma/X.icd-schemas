@@ -1,0 +1,34 @@
+directives:
+  - documents-inline
+  - collection-word-coverpage: null
+  - collection-word-intropage: null
+  - document-word-coverpage: ""
+  - document-word-intropage: "itu_embedded_intro.html"
+bibdata:
+  title:
+    - language: en
+      content: "Revised baseline text and work program changes for X.icd-schemas: Vendor agnostic Security Data Schemas for Integrated Cyber Defense Solutions"
+  type: collection
+  docid:
+    type: ITU
+    id: SG17-Cxxx
+  copyright:
+    owner:
+      name: International Telecommunications Union
+      abbreviation: ITU
+    from: 2025
+format:
+  - presentation
+  - html
+  - pdf
+  - doc
+  - rxl
+output_folder: contribution-new-item
+manifest:
+  level: document
+  title: Document
+  docref:
+    - fileref: document.adoc
+      identifier: SG17-Cxxx
+    - fileref: ../document.adoc
+      identifier: ITU X.ocsf-schemas
